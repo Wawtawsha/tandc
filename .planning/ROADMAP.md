@@ -16,7 +16,7 @@ This roadmap delivers a local furniture store website for Town & Country in Farm
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Brand System** - Clone Shrike template, establish Town & Country visual identity and theming
+- [x] **Phase 1: Foundation & Brand System** - Clone Shrike template, establish Town & Country visual identity and theming
 - [ ] **Phase 2: Navigation & Layout Shell** - Persistent site structure with header, footer, phone, and hours
 - [ ] **Phase 3: Homepage Hero & Trust Strip** - Primary landing experience with video hero and trust signals
 - [ ] **Phase 4: Product Showcase** - La-Z-Boy and Ashley featured products with video and optimized imagery
@@ -39,9 +39,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Smooth scroll (Lenis) operates on page scroll and page transitions animate between routes
 
 Plans:
-- [ ] 01-01-PLAN.md -- Clone Shrike template skeleton, strip unused content, install dependencies
-- [ ] 01-02-PLAN.md -- Apply T&C oklch color palette, typography, metadata, and content branding
-- [ ] 01-03-PLAN.md -- Verify smooth scroll, page transitions, colors, and fonts (human checkpoint)
+- [x] 01-01-PLAN.md -- Clone Shrike template skeleton, strip unused content, install dependencies
+- [x] 01-02-PLAN.md -- Apply T&C oklch color palette, typography, metadata, and content branding
+- [x] 01-03-PLAN.md -- Verify smooth scroll, page transitions, colors, and fonts (human checkpoint)
 
 ### Phase 2: Navigation & Layout Shell
 **Goal:** Every page on the site shares a consistent header with navigation, phone number, and logo, plus a footer with store hours -- the persistent frame that all content lives inside.
@@ -165,7 +165,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
-| 1. Foundation & Brand System | 0/3 | Planning complete | - |
+| 1. Foundation & Brand System | 3/3 | Complete | 2026-03-02 |
 | 2. Navigation & Layout Shell | 0/3 | Not started | - |
 | 3. Homepage Hero & Trust Strip | 0/3 | Not started | - |
 | 4. Product Showcase | 0/5 | Not started | - |
