@@ -104,8 +104,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-01 | Phase 3 | Pending |
 | HOME-02 | Phase 3 | Pending |
 | HOME-03 | Phase 3 | Pending |
-| HOME-04 | Phase 2 | Pending |
-| HOME-05 | Phase 2 | Pending |
+| HOME-04 | Phase 2 | Complete |
+| HOME-05 | Phase 2 | Complete |
 | PROD-01 | Phase 4 | Pending |
 | PROD-02 | Phase 4 | Pending |
 | PROD-03 | Phase 4 | Pending |
@@ -115,10 +115,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TRUST-02 | Phase 5 | Pending |
 | TRUST-03 | Phase 5 | Pending |
 | TRUST-04 | Phase 5 | Pending |
-| CONV-01 | Phase 2 | Pending |
+| CONV-01 | Phase 2 | Complete |
 | CONV-02 | Phase 6 | Pending |
 | CONV-03 | Phase 6 | Pending |
-| CONV-04 | Phase 2 | Pending |
+| CONV-04 | Phase 2 | Complete |
 | CONV-05 | Phase 6 | Pending |
 | TECH-01 | Phase 7 | Pending |
 | TECH-02 | Phase 7 | Pending |
@@ -127,10 +127,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TECH-05 | Phase 4 | Pending |
 | TECH-06 | Phase 8 | Pending |
 | TECH-07 | Phase 8 | Pending |
-| DSGN-01 | Phase 1 | Pending |
-| DSGN-02 | Phase 1 | Pending |
-| DSGN-03 | Phase 1 | Pending |
-| DSGN-04 | Phase 1 | Pending |
+| DSGN-01 | Phase 1 | Complete |
+| DSGN-02 | Phase 1 | Complete |
+| DSGN-03 | Phase 1 | Complete |
+| DSGN-04 | Phase 1 | Complete |
 | DSGN-05 | Phase 8 | Pending |
 
 **Coverage:**

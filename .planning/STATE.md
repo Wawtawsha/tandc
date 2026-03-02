@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-03-02)
 
 **Core value:** When someone in Farmville searches for furniture, they find Town & Country, see what's available, trust the local store, and either call or walk in.
-**Current focus:** Phase 2 - Navigation & Layout Shell
+**Current focus:** Phase 3 - Homepage Hero & Trust Strip
 
 ## Current Position
 
-Phase: 2 of 8 (Navigation & Layout Shell)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-03-02 -- Completed 02-01-PLAN.md (Navigation phone number & route-change close)
+Phase: 3 of 8 (Homepage Hero & Trust Strip)
+Plan: 0 of 3 in current phase
+Status: Ready to plan
+Last activity: 2026-03-02 -- Phase 2 complete (2/2 plans executed, verified)
 
 Progress: [██░░░░░░░░] 25%
 
@@ -69,5 +69,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 02-01-PLAN.md (Navigation phone number & route-change close) - Phase 2 complete
+Stopped at: Phase 2 complete, ready for Phase 3 planning
 Resume file: None

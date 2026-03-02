@@ -17,7 +17,7 @@ This roadmap delivers a local furniture store website for Town & Country in Farm
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Brand System** - Clone Shrike template, establish Town & Country visual identity and theming
-- [ ] **Phase 2: Navigation & Layout Shell** - Persistent site structure with header, footer, phone, and hours
+- [x] **Phase 2: Navigation & Layout Shell** - Persistent site structure with header, footer, phone, and hours
 - [ ] **Phase 3: Homepage Hero & Trust Strip** - Primary landing experience with video hero and trust signals
 - [ ] **Phase 4: Product Showcase** - La-Z-Boy and Ashley featured products with video and optimized imagery
 - [ ] **Phase 5: Local Identity & About** - Town & Country's story, partner badges, and local service messaging
@@ -55,8 +55,8 @@ Plans:
   4. The layout shell renders correctly at mobile, tablet, and desktop widths
 
 Plans:
-- [ ] 02-01-PLAN.md -- Extend header with phone number, expanded nav links, mobile menu close-on-navigate, and scroll-padding
-- [ ] 02-02-PLAN.md -- Build footer with store hours, contact info, and site links
+- [x] 02-01-PLAN.md -- Extend header with phone number, expanded nav links, mobile menu close-on-navigate, and scroll-padding
+- [x] 02-02-PLAN.md -- Build footer with store hours, contact info, and site links
 
 ### Phase 3: Homepage Hero & Trust Strip
 **Goal:** A visitor landing on the homepage immediately sees a compelling video hero with clear calls to action, trust signals that establish credibility, and visual product category navigation.
@@ -165,7 +165,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
 | 1. Foundation & Brand System | 3/3 | Complete | 2026-03-02 |
-| 2. Navigation & Layout Shell | 0/2 | Planning complete | - |
+| 2. Navigation & Layout Shell | 2/2 | Complete | 2026-03-02 |
 | 3. Homepage Hero & Trust Strip | 0/3 | Not started | - |
 | 4. Product Showcase | 0/5 | Not started | - |
 | 5. Local Identity & About | 0/3 | Not started | - |
