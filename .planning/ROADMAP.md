@@ -47,17 +47,16 @@ Plans:
 **Goal:** Every page on the site shares a consistent header with navigation, phone number, and logo, plus a footer with store hours -- the persistent frame that all content lives inside.
 **Depends on:** Phase 1
 **Requirements:** HOME-04, HOME-05, CONV-01, CONV-04
+**Plans:** 2 plans
 **Success Criteria** (what must be TRUE):
   1. A sticky navigation bar with Town & Country logo and nav links is visible on every page, collapsing to a hamburger menu on mobile
   2. The phone number (434) 223-8163 appears in the header on every page and initiates a phone call when tapped on mobile
   3. Store hours (Mon-Fri 9am-5:30pm, Sat 9am-5pm, Closed Sunday) display in the footer on every page
   4. The layout shell renders correctly at mobile, tablet, and desktop widths
-**Plans:** TBD
 
 Plans:
-- [ ] 02-01: Build sticky header with logo, navigation links, and click-to-call phone
-- [ ] 02-02: Build footer with store hours, contact info, and site links
-- [ ] 02-03: Implement mobile hamburger navigation
+- [ ] 02-01-PLAN.md -- Extend header with phone number, expanded nav links, mobile menu close-on-navigate, and scroll-padding
+- [ ] 02-02-PLAN.md -- Build footer with store hours, contact info, and site links
 
 ### Phase 3: Homepage Hero & Trust Strip
 **Goal:** A visitor landing on the homepage immediately sees a compelling video hero with clear calls to action, trust signals that establish credibility, and visual product category navigation.
@@ -166,7 +165,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
 | 1. Foundation & Brand System | 3/3 | Complete | 2026-03-02 |
-| 2. Navigation & Layout Shell | 0/3 | Not started | - |
+| 2. Navigation & Layout Shell | 0/2 | Planning complete | - |
 | 3. Homepage Hero & Trust Strip | 0/3 | Not started | - |
 | 4. Product Showcase | 0/5 | Not started | - |
 | 5. Local Identity & About | 0/3 | Not started | - |
