@@ -62,16 +62,15 @@ Plans:
 **Goal:** A visitor landing on the homepage immediately sees a compelling video hero with clear calls to action, trust signals that establish credibility, and visual product category navigation.
 **Depends on:** Phase 2
 **Requirements:** HOME-01, HOME-02, HOME-03
+**Plans:** 2 plans
 **Success Criteria** (what must be TRUE):
   1. The homepage displays a full-width hero section with an embedded Ashley marketing video, headline text, and prominent "Call Us" and "Get Directions" CTA buttons
   2. A trust signal strip below the hero shows icons for Local Delivery, Family Owned, Financing Available, and Authorized Dealer
   3. A product category grid displays visual cards (Recliners, Sofas, Sectionals, Lift Chairs, Living Room, Bedroom) that link to the appropriate showcase sections
-**Plans:** TBD
 
 Plans:
-- [ ] 03-01: Build hero section with HeroVideo component and CTA buttons
-- [ ] 03-02: Build trust signal strip with icons
-- [ ] 03-03: Build product category grid with visual cards
+- [ ] 03-01-PLAN.md -- Install deps, build hero section (HeroVideo + HeroSection) and trust signal strip
+- [ ] 03-02-PLAN.md -- Build category grid and compose complete homepage
 
 ### Phase 4: Product Showcase
 **Goal:** Visitors can browse featured La-Z-Boy and Ashley products, watch marketing videos, and see high-quality optimized imagery -- all driving "See In Store" actions rather than online purchase.
@@ -166,7 +165,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 |-------|---------------|--------|-----------|
 | 1. Foundation & Brand System | 3/3 | Complete | 2026-03-02 |
 | 2. Navigation & Layout Shell | 2/2 | Complete | 2026-03-02 |
-| 3. Homepage Hero & Trust Strip | 0/3 | Not started | - |
+| 3. Homepage Hero & Trust Strip | 0/2 | Not started | - |
 | 4. Product Showcase | 0/5 | Not started | - |
 | 5. Local Identity & About | 0/3 | Not started | - |
 | 6. Contact & Conversion | 0/3 | Not started | - |
