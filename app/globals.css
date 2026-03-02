@@ -30,6 +30,10 @@ html, body {
   max-width: 100vw;
 }
 
+html {
+  scroll-padding-top: 5rem; /* 80px -- prevents sticky nav from obscuring anchor targets */
+}
+
 .skip-to-content {
   position: absolute;
   top: -100%;
