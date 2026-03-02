@@ -1,0 +1,61 @@
+/* Theme tokens are now in globals.css @theme block.
+   This file contains main-site-specific styles only. */
+
+/* Base body styles */
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Button hover micro-interaction utility */
+.btn-hover {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-hover:hover {
+  transform: scale(1.03);
+}
+
+/* Navigation link underline animation */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Lenis smooth scroll compatibility */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+/* Disable hover transforms for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn-hover:hover {
+    transform: none;
+  }
+
+  .nav-link::after {
+    transition: none;
+  }
+}
