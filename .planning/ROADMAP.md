@@ -31,17 +31,17 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Goal:** The project has a working Next.js application with Town & Country's own visual identity established -- color palette, typography, smooth scroll, and page transitions all functioning.
 **Depends on:** Nothing (first phase)
 **Requirements:** DSGN-01, DSGN-02, DSGN-03, DSGN-04
+**Plans:** 3 plans
 **Success Criteria** (what must be TRUE):
   1. Running `npm run dev` serves a Next.js application at localhost with no build errors
   2. The site displays Town & Country's own color palette (warm, inviting, neutral tones) distinct from both La-Z-Boy vermilion/celadon and Ashley orange/gray
   3. Typography renders using free Google Fonts (serif + sans-serif pairing) with no licensed brand fonts
   4. Smooth scroll (Lenis) operates on page scroll and page transitions animate between routes
-**Plans:** TBD
 
 Plans:
-- [ ] 01-01: Clone Shrike template and adapt project configuration
-- [ ] 01-02: Establish Town & Country oklch color palette and typography system
-- [ ] 01-03: Verify Lenis smooth scroll and page transitions function after adaptation
+- [ ] 01-01-PLAN.md -- Clone Shrike template skeleton, strip unused content, install dependencies
+- [ ] 01-02-PLAN.md -- Apply T&C oklch color palette, typography, metadata, and content branding
+- [ ] 01-03-PLAN.md -- Verify smooth scroll, page transitions, colors, and fonts (human checkpoint)
 
 ### Phase 2: Navigation & Layout Shell
 **Goal:** Every page on the site shares a consistent header with navigation, phone number, and logo, plus a footer with store hours -- the persistent frame that all content lives inside.
@@ -165,7 +165,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
-| 1. Foundation & Brand System | 0/3 | Not started | - |
+| 1. Foundation & Brand System | 0/3 | Planning complete | - |
 | 2. Navigation & Layout Shell | 0/3 | Not started | - |
 | 3. Homepage Hero & Trust Strip | 0/3 | Not started | - |
 | 4. Product Showcase | 0/5 | Not started | - |
