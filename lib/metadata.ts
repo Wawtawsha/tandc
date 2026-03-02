@@ -1,61 +1,59 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://shrikemedia.com";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://townandcountryfarmville.com";
 
 export const siteMetadata = {
-  title: "Shrike Media | Elite Creative Engineering",
+  title: "Town & Country Furniture | Farmville, VA",
   description:
-    "Premium photography, videography, and technical consultation for brands that demand excellence. Elite creative engineering solutions.",
-  author: "Shrike Media",
+    "Farmville, Virginia's home for La-Z-Boy recliners, Ashley Furniture, and quality home furnishings. Family-owned, locally trusted. Visit our showroom today.",
+  author: "Town & Country Furniture",
   keywords: [
-    "photography",
-    "videography",
-    "creative engineering",
-    "technical consultation",
-    "commercial photography",
-    "brand films",
-    "creative solutions",
+    "furniture store Farmville VA",
+    "La-Z-Boy dealer Farmville",
+    "Ashley Furniture Farmville Virginia",
+    "recliners Farmville",
+    "sofas Farmville VA",
+    "furniture near me Farmville",
+    "Town and Country Furniture",
   ],
   og: {
     type: "website" as const,
     locale: "en_US",
-    siteName: "Shrike Media",
+    siteName: "Town & Country Furniture",
   },
   twitter: {
     card: "summary_large_image" as const,
-    creator: "@shrikemedia",
+    creator: "",
   },
 };
-
-export function generateJsonLd(data: {
-  type: "CreativeWork";
-  name: string;
-  description: string;
-  image?: string;
-  datePublished?: string;
-  author?: string;
-  creator?: string;
-}) {
-  return {
-    "@context": "https://schema.org",
-    "@type": data.type,
-    name: data.name,
-    description: data.description,
-    ...(data.image && { image: data.image }),
-    ...(data.datePublished && { datePublished: data.datePublished }),
-    author: data.author || siteMetadata.author,
-    creator: data.creator || siteMetadata.author,
-  };
-}
 
 export function generateOrganizationJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Shrike Media",
+    "@type": "FurnitureStore",
+    name: "Town & Country Furniture",
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
     description: siteMetadata.description,
-    sameAs: [
-      // Add social media URLs when available
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "5301 Farmville Rd",
+      addressLocality: "Farmville",
+      addressRegion: "VA",
+      postalCode: "23901",
+      addressCountry: "US",
+    },
+    telephone: "+14342238163",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "17:30",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "17:00",
+      },
     ],
   };
 }

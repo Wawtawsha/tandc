@@ -1,49 +1,16 @@
-import { Inter, Geist, Source_Code_Pro, Syne, Cormorant_Garamond, Playfair_Display, Caveat } from 'next/font/google';
+import { Libre_Baskerville, DM_Sans } from 'next/font/google';
 
-export const inter = Inter({
+export const libreBaskerville = Libre_Baskerville({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-baskerville',
+});
+
+export const dmSans = DM_Sans({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500', '600', '700'],
-  variable: '--font-inter',
-});
-
-export const geist = Geist({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-geist',
-});
-
-export const sourceCodePro = Source_Code_Pro({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '600'],
-  variable: '--font-mono',
-});
-
-export const syne = Syne({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['700', '800'],
-  variable: '--font-syne',
-});
-
-export const cormorantGaramond = Cormorant_Garamond({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-cormorant',
-});
-
-export const playfairDisplay = Playfair_Display({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '500', '600', '700', '800', '900'],
-  variable: '--font-playfair',
-});
-
-export const caveat = Caveat({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-caveat',
+  variable: '--font-dm-sans',
 });
