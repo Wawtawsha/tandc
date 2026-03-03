@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { HeroSection } from "@/components/hero/HeroSection";
+import { TrustStrip } from "@/components/trust/TrustStrip";
+import { CategoryGrid } from "@/components/categories/CategoryGrid";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -8,19 +11,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main id="main-content">
-      <section className="min-h-screen flex items-center justify-center px-6">
-        <div className="max-w-2xl text-center">
-          <h1 className="text-5xl font-bold mb-6" style={{ fontFamily: 'var(--font-display)' }}>
-            Town &amp; Country Furniture
-          </h1>
-          <p className="text-xl text-muted mb-4">
-            Farmville, Virginia&apos;s home for La-Z-Boy and Ashley Furniture
-          </p>
-          <p className="text-muted">
-            Family-owned. Locally trusted. Visit our showroom today.
-          </p>
-        </div>
-      </section>
+      <HeroSection />
+      <TrustStrip />
+      <CategoryGrid />
     </main>
   );
 }
