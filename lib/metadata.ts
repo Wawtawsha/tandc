@@ -41,6 +41,24 @@ export function generateOrganizationJsonLd() {
       addressCountry: "US",
     },
     telephone: "+14342238163",
+    brand: [
+      {
+        "@type": "Brand",
+        name: "La-Z-Boy",
+      },
+      {
+        "@type": "Brand",
+        name: "Ashley Furniture",
+      },
+    ],
+    areaServed: {
+      "@type": "City",
+      name: "Farmville",
+      "@id": "https://www.wikidata.org/wiki/Q1399115",
+    },
+    priceRange: "$$",
+    paymentAccepted: "Cash, Credit Card, Debit Card",
+    currenciesAccepted: "USD",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

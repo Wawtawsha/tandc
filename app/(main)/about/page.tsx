@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { StorySection } from "@/components/about/StorySection";
 import { PhotoGrid } from "@/components/about/PhotoGrid";
 import { DeliveryPromise } from "@/components/about/DeliveryPromise";
+import { SITE_URL } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "About Us | Family Owned Furniture Store in Farmville, VA",
@@ -9,50 +10,37 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Us | Family Owned Furniture Store in Farmville, VA",
     description: "Town & Country Furniture has been serving Farmville, Virginia families with quality La-Z-Boy and Ashley Furniture. Locally owned, personally delivered.",
-    url: "https://townandcountryfurniture.com/about",
+    url: `${SITE_URL}/about`,
     type: "website",
   },
 };
 
 export default function About() {
-  // Basic FurnitureStore JSON-LD structured data (Phase 7 will expand)
-  const structuredData = {
+  // BreadcrumbList JSON-LD for navigation context
+  const breadcrumbData = {
     "@context": "https://schema.org",
-    "@type": "FurnitureStore",
-    "name": "Town & Country Furniture",
-    "description": "Family-owned furniture store in Farmville, Virginia specializing in La-Z-Boy and Ashley Furniture.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "5301 Farmville Rd",
-      "addressLocality": "Farmville",
-      "addressRegion": "VA",
-      "postalCode": "23901",
-      "addressCountry": "US"
-    },
-    "telephone": "+14342238163",
-    "openingHoursSpecification": [
+    "@type": "BreadcrumbList",
+    "itemListElement": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "17:30"
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": SITE_URL,
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "09:00",
-        "closes": "17:00"
-      }
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+      },
     ],
-    "priceRange": "$$"
   };
 
   return (
     <main id="main-content">
-      {/* JSON-LD Structured Data */}
+      {/* BreadcrumbList Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       {/* Hero Intro Section */}
