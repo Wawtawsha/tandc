@@ -8,7 +8,11 @@ export const StorySection: FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Placeholder Image - Left Column */}
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+          <div
+            className="relative aspect-[4/3] rounded-xl overflow-hidden"
+            role="img"
+            aria-label="Town & Country Furniture showroom - photo coming soon"
+          >
             <div
               className="w-full h-full flex flex-col items-center justify-center gap-2"
               style={{ backgroundColor: 'oklch(0.75 0.08 45)' }}
@@ -20,6 +24,7 @@ export const StorySection: FC = () => {
                 stroke="currentColor"
                 strokeWidth="1.5"
                 className="w-12 h-12 text-white/60"
+                aria-hidden="true"
               >
                 <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3" />
                 <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z" />

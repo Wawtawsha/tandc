@@ -7,7 +7,11 @@ export function MapEmbed() {
   // Graceful degradation if API key is missing
   if (!apiKey) {
     return (
-      <div className="aspect-[16/9] w-full overflow-hidden rounded-lg bg-surface border border-border-subtle flex flex-col items-center justify-center p-6 text-center">
+      <div
+        className="aspect-[16/9] w-full overflow-hidden rounded-lg bg-surface border border-border-subtle flex flex-col items-center justify-center p-6 text-center"
+        role="img"
+        aria-label="Map showing Town & Country Furniture location"
+      >
         <p className="text-foreground font-medium mb-2">
           Town &amp; Country Furniture
         </p>

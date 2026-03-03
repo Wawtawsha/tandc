@@ -31,7 +31,7 @@ export function TrustStrip() {
           {signals.map(({ icon: Icon, label, description }) => (
             <div key={label} className="flex flex-col items-center text-center gap-2">
               <Icon className="w-8 h-8 text-accent" aria-hidden="true" strokeWidth={1.5} />
-              <h3 className="text-sm md:text-base font-semibold text-foreground">{label}</h3>
+              <span className="text-sm md:text-base font-semibold text-foreground">{label}</span>
               <p className="text-xs md:text-sm text-muted hidden md:block">{description}</p>
             </div>
           ))}

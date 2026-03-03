@@ -27,9 +27,11 @@ export const PhotoGrid: FC = () => {
               key={slot.label}
               className="relative aspect-[4/3] rounded-xl overflow-hidden"
               style={{ backgroundColor: `oklch(0.75 0.08 ${slot.hue})` }}
+              role="img"
+              aria-label={`${slot.label} - photo coming soon`}
             >
               <div className="w-full h-full flex flex-col items-center justify-center gap-2">
-                <Camera className="w-12 h-12 text-white/60" strokeWidth={1.5} />
+                <Camera className="w-12 h-12 text-white/60" strokeWidth={1.5} aria-hidden="true" />
                 <span className="text-white/70 text-sm font-medium">Photo Coming Soon</span>
                 <span className="text-white/50 text-xs">{slot.label}</span>
               </div>

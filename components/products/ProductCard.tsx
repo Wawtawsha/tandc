@@ -37,6 +37,8 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
           <div
             className="w-full h-full flex flex-col items-center justify-center gap-2"
             style={{ backgroundColor: categoryColors[product.category] }}
+            role="img"
+            aria-label={`${product.imageAlt} - photo coming soon`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +47,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
               stroke="currentColor"
               strokeWidth="1.5"
               className="w-12 h-12 text-white/60"
+              aria-hidden="true"
             >
               <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3" />
               <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z" />
