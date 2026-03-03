@@ -113,16 +113,15 @@ Plans:
 **Goal:** A visitor who is ready to act can immediately get directions, submit a question, or find the store on a map -- every conversion path is one click away.
 **Depends on:** Phase 2
 **Requirements:** CONV-02, CONV-03, CONV-05
+**Plans:** 2 plans
 **Success Criteria** (what must be TRUE):
   1. A Google Maps embed shows the store location at 5301 Farmville Rd, Farmville, VA 23901
   2. A contact form captures name, email, phone (optional), and message, and submissions are forwarded to the store email
   3. A "Get Directions" button opens Google Maps driving directions to the store address
-**Plans:** TBD
 
 Plans:
-- [ ] 06-01: Build contact section with Google Maps embed and directions link
-- [ ] 06-02: Build contact form with email forwarding
-- [ ] 06-03: Wire up all conversion CTAs across the site
+- [ ] 06-01-PLAN.md -- Build contact section with Google Maps embed, store info, directions, and homepage integration
+- [ ] 06-02-PLAN.md -- Build contact form with Zod validation and Resend email forwarding
 
 ### Phase 7: SEO, Analytics & Metadata
 **Goal:** The site is discoverable by search engines for Farmville furniture queries, shares well on social media, and tracks every meaningful user interaction for business intelligence.
@@ -170,6 +169,6 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | 3. Homepage Hero & Trust Strip | 2/2 | Complete | 2026-03-02 |
 | 4. Product Showcase | 3/3 | Complete (content deps) | 2026-03-02 |
 | 5. Local Identity & About | 2/2 | Complete | 2026-03-03 |
-| 6. Contact & Conversion | 0/3 | Not started | - |
+| 6. Contact & Conversion | 0/2 | Not started | - |
 | 7. SEO, Analytics & Metadata | 0/4 | Not started | - |
 | 8. Responsive Polish & Deployment | 0/4 | Not started | - |
