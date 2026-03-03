@@ -6,10 +6,16 @@ import { LaZBoySection } from "@/components/products/LaZBoySection";
 import { AshleySection } from "@/components/products/AshleySection";
 import { VideoShowcase } from "@/components/products/VideoShowcase";
 import { ContactSection } from "@/components/contact/ContactSection";
+import { SITE_URL } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Home",
   description: "Town & Country Furniture - Farmville, Virginia's home for La-Z-Boy and Ashley Furniture.",
+  openGraph: {
+    title: "Town & Country Furniture | Farmville, VA",
+    description: "Farmville, Virginia's home for La-Z-Boy and Ashley Furniture.",
+    url: SITE_URL,
+  },
 };
 
 export default function Home() {

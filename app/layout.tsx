@@ -12,6 +12,19 @@ export const metadata: Metadata = {
   description: siteMetadata.description,
   keywords: siteMetadata.keywords,
   authors: [{ name: siteMetadata.author }],
+  openGraph: {
+    type: siteMetadata.og.type,
+    locale: siteMetadata.og.locale,
+    siteName: siteMetadata.og.siteName,
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: SITE_URL,
+  },
+  twitter: {
+    card: siteMetadata.twitter.card,
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+  },
   robots: {
     index: true,
     follow: true,
