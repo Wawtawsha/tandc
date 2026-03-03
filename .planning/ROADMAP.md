@@ -20,7 +20,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Navigation & Layout Shell** - Persistent site structure with header, footer, phone, and hours
 - [x] **Phase 3: Homepage Hero & Trust Strip** - Primary landing experience with video hero and trust signals
 - [x] **Phase 4: Product Showcase** - La-Z-Boy and Ashley featured products with video and optimized imagery
-- [ ] **Phase 5: Local Identity & About** - Town & Country's story, partner badges, and local service messaging
+- [x] **Phase 5: Local Identity & About** - Town & Country's story, partner badges, and local service messaging
 - [ ] **Phase 6: Contact & Conversion** - Map, contact form, directions, and conversion endpoints
 - [ ] **Phase 7: SEO, Analytics & Metadata** - Structured data, social sharing, GA4 tracking, and Nessus documentation
 - [ ] **Phase 8: Responsive Polish & Deployment** - Mobile-first audit, accessibility pass, and Vercel production deploy
@@ -106,8 +106,8 @@ Plans:
   4. The About section includes placeholder slots for store exterior/interior photos, ready for client-provided imagery
 
 Plans:
-- [ ] 05-01-PLAN.md -- Build About page with story narrative, photo placeholders, delivery promise, and SEO metadata
-- [ ] 05-02-PLAN.md -- Add dual-brand partner badges to footer
+- [x] 05-01-PLAN.md -- Build About page with story narrative, photo placeholders, delivery promise, and SEO metadata
+- [x] 05-02-PLAN.md -- Add dual-brand partner badges to footer
 
 ### Phase 6: Contact & Conversion
 **Goal:** A visitor who is ready to act can immediately get directions, submit a question, or find the store on a map -- every conversion path is one click away.
@@ -169,7 +169,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | 2. Navigation & Layout Shell | 2/2 | Complete | 2026-03-02 |
 | 3. Homepage Hero & Trust Strip | 2/2 | Complete | 2026-03-02 |
 | 4. Product Showcase | 3/3 | Complete (content deps) | 2026-03-02 |
-| 5. Local Identity & About | 0/2 | Planned | - |
+| 5. Local Identity & About | 2/2 | Complete | 2026-03-03 |
 | 6. Contact & Conversion | 0/3 | Not started | - |
 | 7. SEO, Analytics & Metadata | 0/4 | Not started | - |
 | 8. Responsive Polish & Deployment | 0/4 | Not started | - |

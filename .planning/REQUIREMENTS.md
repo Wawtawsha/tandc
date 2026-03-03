@@ -25,10 +25,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Local Identity & Trust
 
-- [ ] **TRUST-01**: About Us section tells Town & Country's story -- long-standing local business, family-owned, community presence in Farmville
-- [ ] **TRUST-02**: Dual-brand partner badges displayed -- "Authorized La-Z-Boy Dealer" and "Ashley Furniture Partner" in header and/or footer
-- [ ] **TRUST-03**: Local delivery messaging prominently featured -- "We deliver personally" language that differentiates from corporate delivery complaints
-- [ ] **TRUST-04**: About section includes store exterior/interior photo placeholder slots for client-provided imagery
+- [x] **TRUST-01**: About Us section tells Town & Country's story -- long-standing local business, family-owned, community presence in Farmville
+- [x] **TRUST-02**: Dual-brand partner badges displayed -- "Authorized La-Z-Boy Dealer" and "Ashley Furniture Partner" in header and/or footer
+- [x] **TRUST-03**: Local delivery messaging prominently featured -- "We deliver personally" language that differentiates from corporate delivery complaints
+- [x] **TRUST-04**: About section includes store exterior/interior photo placeholder slots for client-provided imagery
 
 ### Contact & Conversion
 
@@ -111,10 +111,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PROD-03 | Phase 4 | Complete (placeholder video IDs) |
 | PROD-04 | Phase 4 | Complete |
 | PROD-05 | Phase 4 | Partial (infra wired, needs images) |
-| TRUST-01 | Phase 5 | Pending |
-| TRUST-02 | Phase 5 | Pending |
-| TRUST-03 | Phase 5 | Pending |
-| TRUST-04 | Phase 5 | Pending |
+| TRUST-01 | Phase 5 | Complete |
+| TRUST-02 | Phase 5 | Complete |
+| TRUST-03 | Phase 5 | Complete |
+| TRUST-04 | Phase 5 | Complete |
 | CONV-01 | Phase 2 | Complete |
 | CONV-02 | Phase 6 | Pending |
 | CONV-03 | Phase 6 | Pending |
@@ -140,4 +140,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-03-02*
-*Last updated: 2026-03-02 after Phase 4 completion*
+*Last updated: 2026-03-03 after Phase 5 completion*
