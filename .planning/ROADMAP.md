@@ -127,18 +127,17 @@ Plans:
 **Goal:** The site is discoverable by search engines for Farmville furniture queries, shares well on social media, and tracks every meaningful user interaction for business intelligence.
 **Depends on:** Phases 3, 4, 5, 6 (content must exist to annotate)
 **Requirements:** TECH-01, TECH-02, TECH-03, TECH-04
+**Plans:** 3 plans
 **Success Criteria** (what must be TRUE):
   1. FurnitureStore schema.org structured data is present on all pages with correct name, address, phone, hours, and brand affiliations
   2. OpenGraph metadata (og:image, og:title, og:description) renders correct social sharing previews for every page
   3. Google Analytics 4 fires events for page views, phone clicks, direction clicks, form submissions, video plays, category clicks, scroll depth, and CTA interactions
   4. The analytics event layer is documented with event names, parameters, data schema, and integration points for future Nessus connection
-**Plans:** TBD
 
 Plans:
-- [ ] 07-01: Implement FurnitureStore schema.org structured data
-- [ ] 07-02: Configure OpenGraph metadata for all pages
-- [ ] 07-03: Implement GA4 with comprehensive event tracking
-- [ ] 07-04: Document analytics event layer for Nessus integration
+- [ ] 07-01-PLAN.md -- Schema.org structured data, OpenGraph metadata, dynamic OG images, and GA4 bootstrap
+- [ ] 07-02-PLAN.md -- Phone, directions, and category click tracking wrappers for Server Components
+- [ ] 07-03-PLAN.md -- Video play and form submit tracking, plus analytics documentation (TRACKING_PLAN.md)
 
 ### Phase 8: Responsive Polish & Deployment
 **Goal:** The site is production-ready: fully responsive on mobile, accessible to all users, and deployed to Vercel with custom domain support.
@@ -170,5 +169,5 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | 4. Product Showcase | 3/3 | Complete (content deps) | 2026-03-02 |
 | 5. Local Identity & About | 2/2 | Complete | 2026-03-03 |
 | 6. Contact & Conversion | 2/2 | Complete | 2026-03-03 |
-| 7. SEO, Analytics & Metadata | 0/4 | Not started | - |
+| 7. SEO, Analytics & Metadata | 0/3 | Not started | - |
 | 8. Responsive Polish & Deployment | 0/4 | Not started | - |
