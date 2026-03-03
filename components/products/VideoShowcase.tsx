@@ -64,7 +64,7 @@ export function VideoShowcase() {
                 {video.title}
               </h3>
               <p className="text-muted text-sm">{video.description}</p>
-              <HeroVideo videoId={video.videoId} title={video.title} />
+              <HeroVideo videoId={video.videoId} title={video.title} location="video_showcase" />
             </div>
           ))}
         </div>

@@ -4,6 +4,7 @@ import { useActionState, useRef, useEffect } from 'react';
 import { submitContactForm } from '@/app/actions/contact';
 import { SubmitButton } from './SubmitButton';
 import type { ActionState } from '@/lib/validations/contact';
+import { sendGAEvent } from '@next/third-parties/google';
 
 const initialState: ActionState = {
   message: '',
@@ -15,15 +16,29 @@ export function ContactForm() {
   const [state, formAction] = useActionState(submitContactForm, initialState);
   const formRef = useRef<HTMLFormElement>(null);
 
-  // Reset form after successful submission
+  // Reset form and fire success event after successful submission
   useEffect(() => {
     if (state.success) {
       formRef.current?.reset();
+      sendGAEvent('event', 'form_submit_success', {
+        form_name: 'contact',
+        form_location: 'contact_section',
+      });
     }
   }, [state.success]);
 
   return (
-    <form ref={formRef} action={formAction} className="space-y-5">
+    <form
+      ref={formRef}
+      action={formAction}
+      onSubmit={() => {
+        sendGAEvent('event', 'form_submit', {
+          form_name: 'contact',
+          form_location: 'contact_section',
+        });
+      }}
+      className="space-y-5"
+    >
       {/* Name Field */}
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
