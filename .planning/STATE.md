@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 Phase: 5 of 8 (Local Identity & About)
 Plan: 1 of 3 in current phase
 Status: In progress
-Last activity: 2026-03-02 -- Completed 05-02-PLAN.md (partner badges in footer)
+Last activity: 2026-03-02 -- Completed 05-01-PLAN.md (About page build)
 
 Progress: [█████▓░░░░] 55%
 
@@ -20,8 +20,8 @@ Progress: [█████▓░░░░] 55%
 
 **Velocity:**
 - Total plans completed: 11
-- Average duration: 1min 53sec
-- Total execution time: 17min 21sec
+- Average duration: 1min 56sec
+- Total execution time: 21min 29sec
 
 **By Phase:**
 
@@ -31,10 +31,10 @@ Progress: [█████▓░░░░] 55%
 | 2. Navigation & Layout Shell | 2/2 | 3min 28sec | 1min 44sec |
 | 3. Homepage Hero & Trust Strip | 2/2 | 5min 15sec | 2min 38sec |
 | 4. Product Showcase | 3/3 | 6min 36sec | 2min 12sec |
-| 5. Local Identity & About | 1/3 | 2min 0sec | 2min 0sec |
+| 5. Local Identity & About | 1/3 | 4min 8sec | 4min 8sec |
 
 **Recent Trend:**
-- Last 3 plans: 04-02 (showcase sections), 04-03 (homepage integration), 05-02 (partner badges)
+- Last 3 plans: 04-03 (homepage integration), 05-02 (partner badges), 05-01 (about page)
 - Trend: All passed first attempt
 
 *Updated after each plan completion*
@@ -83,6 +83,10 @@ Recent decisions affecting current work:
 - Partner badges inline in Footer (not separate component) for simplicity
 - Award icon pattern for certifications/partnerships (matches TrustStrip styling)
 - Partner badges responsive: flex-col on mobile, sm:flex-row on desktop
+- About page uses personal accountability language (not corporate e-commerce speak)
+- Photo placeholders use Lucide Camera icon with oklch backgrounds and "Photo Coming Soon" text
+- Basic FurnitureStore JSON-LD in About page (Phase 7 will expand with geo/images)
+- Google Maps directions link uses API format for universal device support
 
 ### Pending Todos
 
@@ -95,9 +99,10 @@ None yet.
 - Actual Ashley marketing video ID needed from client (currently using placeholder dQw4w9WgXcQ)
 - Product photography not yet available (using oklch placeholder strategy)
 - Contact form anchor target (#contact) doesn't exist yet (planned for Phase 6)
+- About page needs 3 actual photos before launch: store exterior, showroom interior, team photo
 
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 05-02-PLAN.md (partner badges)
+Stopped at: Completed 05-01-PLAN.md (About page build)
 Resume file: None
