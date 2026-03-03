@@ -64,7 +64,7 @@ export function Footer() {
                 <PhoneLink
                   phone="+14342238163"
                   location="footer"
-                  className="text-sm text-muted hover:text-accent transition-colors"
+                  className="min-h-[48px] inline-flex items-center text-sm text-muted hover:text-accent transition-colors"
                   ariaLabel="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
                 >
                   (434) 223-8163
@@ -91,7 +91,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted hover:text-accent transition-colors"
+                    className="min-h-[48px] flex items-center text-sm text-muted hover:text-accent transition-colors"
                   >
                     {link.label}
                   </Link>

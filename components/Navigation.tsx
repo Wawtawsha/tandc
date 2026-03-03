@@ -41,7 +41,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold tracking-tight hover:text-accent transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+          <Link href="/" className="text-2xl font-bold tracking-tight hover:text-accent transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded" style={{ fontFamily: 'var(--font-display)' }}>
             Town &amp; Country
           </Link>
 
@@ -55,7 +55,7 @@ export function Navigation() {
                 >
                   <Link
                     href={link.href}
-                    className={`relative font-medium transition-colors hover:text-accent nav-link ${
+                    className={`relative font-medium transition-colors hover:text-accent nav-link focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded ${
                       pathname === link.href ? 'text-accent' : 'text-foreground'
                     }`}
                     aria-current={pathname === link.href ? 'page' : undefined}
@@ -68,7 +68,7 @@ export function Navigation() {
             <li>
               <a
                 href="tel:+14342238163"
-                className="font-medium text-accent hover:text-accent-hover transition-colors"
+                className="min-h-[48px] flex items-center font-medium text-accent hover:text-accent-hover transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded"
                 aria-label="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
                 onClick={() => sendGAEvent('event', 'phone_click', { phone_number: '+14342238163', click_location: 'nav_desktop' })}
               >
@@ -80,7 +80,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             ref={menuButtonRef}
-            className="md:hidden p-2 hover:bg-surface rounded-lg transition-colors"
+            className="md:hidden p-3 min-h-[48px] min-w-[48px] flex items-center justify-center hover:bg-surface rounded-lg transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-menu"
@@ -112,7 +112,7 @@ export function Navigation() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`block py-2 px-4 rounded-lg font-medium transition-colors hover:bg-surface ${
+                  className={`block py-3 px-4 min-h-[48px] flex items-center rounded-lg font-medium transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                     pathname === link.href ? 'text-accent bg-surface' : 'text-foreground'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
@@ -125,7 +125,7 @@ export function Navigation() {
             <li className="pt-2 border-t border-border-subtle">
               <a
                 href="tel:+14342238163"
-                className="block py-3 px-4 rounded-lg font-medium text-accent hover:bg-surface transition-colors"
+                className="block py-3 px-4 min-h-[48px] flex items-center rounded-lg font-medium text-accent hover:bg-surface transition-colors"
                 aria-label="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
                 onClick={() => sendGAEvent('event', 'phone_click', { phone_number: '+14342238163', click_location: 'nav_mobile' })}
               >
