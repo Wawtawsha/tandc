@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 6 of 8 (Contact & Conversion)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-03-03 -- Completed 06-01-PLAN.md (Contact section with map)
+Last activity: 2026-03-03 -- Completed 06-02-PLAN.md (Contact form with validation & email)
 
-Progress: [███████░░░] 68%
+Progress: [████████░░] 73%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13
-- Average duration: 1min 57sec
-- Total execution time: 28min 40sec
+- Total plans completed: 14
+- Average duration: 2min 4sec
+- Total execution time: 32min 10sec
 
 **By Phase:**
 
@@ -32,10 +32,10 @@ Progress: [███████░░░] 68%
 | 3. Homepage Hero & Trust Strip | 2/2 | 5min 15sec | 2min 38sec |
 | 4. Product Showcase | 3/3 | 6min 36sec | 2min 12sec |
 | 5. Local Identity & About | 2/2 | 4min 8sec | 2min 4sec |
-| 6. Contact & Conversion | 1/3 | 3min 0sec | 3min 0sec |
+| 6. Contact & Conversion | 2/3 | 6min 30sec | 3min 15sec |
 
 **Recent Trend:**
-- Last 3 plans: 06-01 (contact section), 05-02 (partner badges), 05-01 (about page)
+- Last 3 plans: 06-02 (contact form), 06-01 (contact section), 05-02 (partner badges)
 - Trend: All passed first attempt
 
 *Updated after each plan completion*
@@ -91,6 +91,13 @@ Recent decisions affecting current work:
 - MapEmbed with graceful degradation if NEXT_PUBLIC_GOOGLE_MAPS_API_KEY missing
 - ContactSection bg-surface for alternating section pattern (after VideoShowcase)
 - Contact sections use two-column grid (map/info left, form right)
+- Zod for contact form validation with field-level error messages
+- Resend for email delivery (onboarding@resend.dev until custom domain)
+- useActionState for Server Action integration (React 19)
+- Phone field optional with no format validation (simplicity over strict regex)
+- Form resets after success via useEffect watching state.success
+- Server Actions ('use server') keep API keys server-side only
+- useFormStatus in child component for submit button pending state
 
 ### Pending Todos
 
@@ -104,9 +111,10 @@ None yet.
 - Product photography not yet available (using oklch placeholder strategy)
 - About page needs 3 actual photos before launch: store exterior, showroom interior, team photo
 - NEXT_PUBLIC_GOOGLE_MAPS_API_KEY environment variable needed for full map embed (graceful fallback if missing)
+- RESEND_API_KEY environment variable required for contact form email delivery (create free Resend account)
 
 ## Session Continuity
 
 Last session: 2026-03-03
-Stopped at: Completed 06-01-PLAN.md (Contact section with Google Maps embed)
+Stopped at: Completed 06-02-PLAN.md (Contact form with Zod validation and Resend email)
 Resume file: None
