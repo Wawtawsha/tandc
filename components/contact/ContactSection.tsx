@@ -29,7 +29,7 @@ export function ContactSection() {
         </div>
 
         {/* Two-Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Column: Map and Store Info */}
           <div className="space-y-6">
             <MapEmbed />

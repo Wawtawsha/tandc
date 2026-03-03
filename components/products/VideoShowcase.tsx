@@ -58,7 +58,7 @@ export function VideoShowcase() {
           {videos.map((video) => (
             <div key={video.id} className="flex flex-col gap-4">
               <h3
-                className="text-xl font-semibold"
+                className="text-lg md:text-xl font-semibold"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
                 {video.title}
