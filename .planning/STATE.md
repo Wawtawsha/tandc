@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 3 of 8 (Homepage Hero & Trust Strip)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-03-02 -- Completed 03-01-PLAN.md (hero and trust strip components)
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-03-02 -- Completed 03-02-PLAN.md (category grid and homepage composition)
 
-Progress: [███░░░░░░░] 30%
+Progress: [███░░░░░░░] 35%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 1min 52sec
-- Total execution time: 6min 52sec
+- Total plans completed: 7
+- Average duration: 1min 51sec
+- Total execution time: 8min 43sec
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [███░░░░░░░] 30%
 |-------|-------|-------|----------|
 | 1. Foundation & Brand System | 3/3 | -- | -- |
 | 2. Navigation & Layout Shell | 2/2 | 3min 28sec | 1min 44sec |
-| 3. Homepage Hero & Trust Strip | 1/2 | 3min 24sec | 3min 24sec |
+| 3. Homepage Hero & Trust Strip | 2/2 | 5min 15sec | 2min 38sec |
 
 **Recent Trend:**
-- Last 3 plans: 02-02 (footer), 02-01 (nav phone), 03-01 (hero/trust)
+- Last 3 plans: 02-01 (nav phone), 03-01 (hero/trust), 03-02 (categories/homepage)
 - Trend: All passed first attempt
 
 *Updated after each plan completion*
@@ -62,6 +62,10 @@ Recent decisions affecting current work:
 - Lucide icons for trust signals (tree-shakeable, works in Server Components)
 - Placeholder YouTube videoId dQw4w9WgXcQ (to be replaced with actual Ashley marketing video)
 - Trust signal descriptions hidden on mobile (md:block) for compact layout
+- CategoryGrid uses placeholder oklch color backgrounds until product images available
+- Category cards use 4:3 aspect ratio to prevent layout shift when images added
+- Anchor links to showcase sections (e.g., #recliners) for future Phase 4 navigation
+- Homepage page.tsx is Server Component composing three Server Components
 
 ### Pending Todos
 
@@ -75,6 +79,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-02T18:59:54Z
-Stopped at: Completed 03-01-PLAN.md (hero and trust strip components)
+Last session: 2026-03-02T19:05:56Z
+Stopped at: Completed 03-02-PLAN.md (category grid and homepage composition) -- Phase 3 complete
 Resume file: None
