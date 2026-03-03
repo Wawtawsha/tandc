@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { HeroSection } from "@/components/hero/HeroSection";
 import { TrustStrip } from "@/components/trust/TrustStrip";
 import { CategoryGrid } from "@/components/categories/CategoryGrid";
+import { LaZBoySection } from "@/components/products/LaZBoySection";
+import { AshleySection } from "@/components/products/AshleySection";
+import { VideoShowcase } from "@/components/products/VideoShowcase";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -14,6 +17,9 @@ export default function Home() {
       <HeroSection />
       <TrustStrip />
       <CategoryGrid />
+      <LaZBoySection />
+      <AshleySection />
+      <VideoShowcase />
     </main>
   );
 }
