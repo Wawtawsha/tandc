@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Award } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -98,8 +99,18 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Partner Badges & Copyright */}
         <div className="border-t border-border-subtle mt-8 pt-6 text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-4">
+            <div className="flex items-center gap-2">
+              <Award className="w-5 h-5 text-accent" strokeWidth={1.5} aria-hidden="true" />
+              <span className="text-sm text-muted">Authorized La-Z-Boy Dealer</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Award className="w-5 h-5 text-accent" strokeWidth={1.5} aria-hidden="true" />
+              <span className="text-sm text-muted">Ashley Furniture Partner</span>
+            </div>
+          </div>
           <p className="text-sm text-muted">
             &copy; {currentYear} Town &amp; Country Furniture. All rights
             reserved.
