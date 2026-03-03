@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Award } from 'lucide-react';
+import { PhoneLink } from '@/components/analytics/PhoneLink';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -60,13 +61,14 @@ export function Footer() {
             </h2>
             <div className="space-y-3">
               <div>
-                <a
-                  href="tel:+14342238163"
+                <PhoneLink
+                  phone="+14342238163"
+                  location="footer"
                   className="text-sm text-muted hover:text-accent transition-colors"
-                  aria-label="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
+                  ariaLabel="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
                 >
                   (434) 223-8163
-                </a>
+                </PhoneLink>
               </div>
               <address className="text-sm text-muted not-italic">
                 5301 Farmville Rd

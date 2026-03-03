@@ -1,10 +1,11 @@
 // Server Component - Contact section with map, store info, and contact form
 import { MapEmbed } from './MapEmbed';
 import { ContactForm } from './ContactForm';
+import { PhoneLink } from '@/components/analytics/PhoneLink';
+import { DirectionsLink } from '@/components/analytics/DirectionsLink';
 
 export function ContactSection() {
   const storeAddress = "5301 Farmville Rd, Farmville, VA 23901";
-  const encodedAddress = encodeURIComponent(storeAddress);
 
   return (
     <section
@@ -56,13 +57,14 @@ export function ContactSection() {
                 {/* Phone */}
                 <div>
                   <p className="font-medium text-foreground mb-1">Phone</p>
-                  <a
-                    href="tel:+14342238163"
+                  <PhoneLink
+                    phone="+14342238163"
+                    location="contact_section"
                     className="text-accent hover:text-accent-hover transition-colors"
-                    aria-label="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
+                    ariaLabel="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
                   >
                     (434) 223-8163
-                  </a>
+                  </PhoneLink>
                 </div>
 
                 {/* Hours */}
@@ -86,10 +88,9 @@ export function ContactSection() {
               </address>
 
               {/* Get Directions Button */}
-              <a
-                href={`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <DirectionsLink
+                destination={storeAddress}
+                location="contact_section"
                 className="inline-flex items-center justify-center w-full px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent-hover transition-colors mt-6"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -97,7 +98,7 @@ export function ContactSection() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 Get Directions
-              </a>
+              </DirectionsLink>
             </div>
           </div>
 

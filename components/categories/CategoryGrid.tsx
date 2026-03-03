@@ -1,3 +1,5 @@
+import { CategoryLink } from '@/components/analytics/CategoryLink';
+
 const categories = [
   { name: 'Recliners', href: '#recliners', color: 'oklch(0.55 0.12 70)' },
   { name: 'Sofas', href: '#sofas', color: 'oklch(0.50 0.10 55)' },
@@ -21,9 +23,10 @@ export function CategoryGrid() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
           {categories.map((cat) => (
-            <a
+            <CategoryLink
               key={cat.name}
               href={cat.href}
+              categoryName={cat.name}
               className="group relative aspect-[4/3] rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               style={{ backgroundColor: cat.color }}
             >
@@ -41,7 +44,7 @@ export function CategoryGrid() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </span>
-            </a>
+            </CategoryLink>
           ))}
         </div>
       </div>

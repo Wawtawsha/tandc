@@ -2,6 +2,7 @@
 // Server Component - no 'use client' directive
 import Image from 'next/image';
 import type { Product } from '@/data/products';
+import { CTALink } from '@/components/analytics/CTALink';
 
 interface ProductCardProps {
   product: Product;
@@ -81,8 +82,10 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
         )}
 
         {/* CTA - "See In Store" not "Buy Now" */}
-        <a
+        <CTALink
           href="#contact"
+          ctaText="See In Store"
+          location="product_card"
           className="inline-flex items-center justify-center w-full px-4 py-2 bg-accent text-white font-medium rounded hover:bg-accent-hover transition-colors mt-auto"
         >
           See In Store
@@ -100,7 +103,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
               d="M9 5l7 7-7 7"
             />
           </svg>
-        </a>
+        </CTALink>
       </div>
     </article>
   );
