@@ -143,17 +143,17 @@ Plans:
 **Goal:** The site is production-ready: fully responsive on mobile, accessible to all users, and deployed to Vercel with custom domain support.
 **Depends on:** All previous phases
 **Requirements:** TECH-06, TECH-07, DSGN-05
+**Plans:** 4 plans
 **Success Criteria** (what must be TRUE):
   1. The site renders correctly in single-column layout on mobile, grid layouts on tablet/desktop, with 48px minimum touch targets throughout
   2. WCAG AA accessibility passes: skip-to-content link, semantic HTML, alt text on all images, full keyboard navigation, and reduced-motion support
   3. The site is deployed to Vercel with a successful production build and custom domain support configured
-**Plans:** TBD
 
 Plans:
-- [ ] 08-01: Mobile-first responsive audit and fixes across all sections
-- [ ] 08-02: WCAG AA accessibility pass
-- [ ] 08-03: Vercel deployment and custom domain configuration
-- [ ] 08-04: Final cross-browser and performance validation
+- [ ] 08-01-PLAN.md -- Mobile-first responsive audit: 48px touch targets and layout fixes at 375px/768px/1280px
+- [ ] 08-02-PLAN.md -- WCAG AA accessibility pass: focus-visible indicators, heading hierarchy, alt text, semantic HTML
+- [ ] 08-03-PLAN.md -- Production build verification and Vercel preview deployment
+- [ ] 08-04-PLAN.md -- Human verification of mobile, desktop, and keyboard navigation (checkpoint)
 
 ## Progress
 
