@@ -1,5 +1,6 @@
-// Server Component - Contact section with map, store info, and form placeholder
+// Server Component - Contact section with map, store info, and contact form
 import { MapEmbed } from './MapEmbed';
+import { ContactForm } from './ContactForm';
 
 export function ContactSection() {
   const storeAddress = "5301 Farmville Rd, Farmville, VA 23901";
@@ -100,7 +101,7 @@ export function ContactSection() {
             </div>
           </div>
 
-          {/* Right Column: Form Placeholder */}
+          {/* Right Column: Contact Form */}
           <div className="bg-background rounded-lg p-6 lg:p-8 border border-border-subtle">
             <h3
               className="text-xl font-semibold mb-4 text-foreground"
@@ -112,22 +113,7 @@ export function ContactSection() {
               Have a question about our furniture? Fill out the form below and we&apos;ll get back to you within 24 hours.
             </p>
 
-            {/* Plan 02 replaces this with ContactForm */}
-            <div className="text-center py-12">
-              <p className="text-muted mb-4">
-                Or call us directly at
-              </p>
-              <a
-                href="tel:+14342238163"
-                className="inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent-hover transition-colors"
-                aria-label="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                (434) 223-8163
-              </a>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </div>
