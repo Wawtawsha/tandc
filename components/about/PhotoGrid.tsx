@@ -43,7 +43,7 @@ export const PhotoGrid: FC = () => {
             href="https://www.google.com/maps/dir/?api=1&destination=5301+Farmville+Rd+Farmville+VA+23901"
             target="_blank"
             rel="noopener noreferrer"
-            className="min-h-[48px] inline-flex items-center gap-2 text-accent hover:text-accent-hover transition-colors font-medium"
+            className="min-h-[48px] inline-flex items-center gap-2 text-accent hover:text-accent-hover transition-colors font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded"
           >
             Get Directions to Our Store
             <svg

@@ -42,7 +42,7 @@ export function LaZBoySection() {
         <div className="mt-12 text-center">
           <a
             href="#contact"
-            className="inline-flex items-center text-accent hover:text-accent-hover font-medium transition-colors"
+            className="inline-flex items-center text-accent hover:text-accent-hover font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent rounded"
           >
             Visit Us to See the Full La-Z-Boy Collection
             <svg

@@ -86,7 +86,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
           href="#contact"
           ctaText="See In Store"
           location="product_card"
-          className="inline-flex items-center justify-center w-full px-4 py-3 min-h-[48px] bg-accent text-white font-medium rounded hover:bg-accent-hover transition-colors mt-auto"
+          className="inline-flex items-center justify-center w-full px-4 py-3 min-h-[48px] bg-accent text-white font-medium rounded hover:bg-accent-hover transition-colors mt-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
           See In Store
           <svg

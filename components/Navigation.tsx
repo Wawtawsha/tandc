@@ -125,7 +125,7 @@ export function Navigation() {
             <li className="pt-2 border-t border-border-subtle">
               <a
                 href="tel:+14342238163"
-                className="block py-3 px-4 min-h-[48px] flex items-center rounded-lg font-medium text-accent hover:bg-surface transition-colors"
+                className="block py-3 px-4 min-h-[48px] flex items-center rounded-lg font-medium text-accent hover:bg-surface transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 aria-label="Call Town and Country Furniture at 4 3 4, 2 2 3, 8 1 6 3"
                 onClick={() => sendGAEvent('event', 'phone_click', { phone_number: '+14342238163', click_location: 'nav_mobile' })}
               >
