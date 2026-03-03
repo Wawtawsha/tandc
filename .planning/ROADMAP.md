@@ -76,20 +76,18 @@ Plans:
 **Goal:** Visitors can browse featured La-Z-Boy and Ashley products, watch marketing videos, and see high-quality optimized imagery -- all driving "See In Store" actions rather than online purchase.
 **Depends on:** Phase 3
 **Requirements:** PROD-01, PROD-02, PROD-03, PROD-04, PROD-05, TECH-05
+**Plans:** 3 plans
 **Success Criteria** (what must be TRUE):
   1. A La-Z-Boy best sellers section displays featured products with images, names, and "See In Store" CTAs
   2. An Ashley collections section displays featured products (Next-Gen, Nuvella, lifestyle pieces) with images and "See In Store" CTAs
   3. Marketing videos (self-gliding chair, sofa comparison, outdoor furniture) are embedded and playable inline
   4. Featured products are configurable by editing data files (JSON or similar) without code changes
   5. All product images are served as WebP/AVIF through Next.js Image with responsive sizing, blur placeholders, and lazy loading -- LCP under 3 seconds on simulated mobile 4G
-**Plans:** TBD
 
 Plans:
-- [ ] 04-01: Create product data schema and configurable data files
-- [ ] 04-02: Build La-Z-Boy best sellers showcase section
-- [ ] 04-03: Build Ashley collections showcase section
-- [ ] 04-04: Integrate video embeds for marketing material
-- [ ] 04-05: Configure Next.js Image optimization and verify LCP target
+- [ ] 04-01-PLAN.md -- Product data schema, typed catalog, and shared ProductCard component
+- [ ] 04-02-PLAN.md -- La-Z-Boy best sellers section, Ashley collections section, and video showcase
+- [ ] 04-03-PLAN.md -- Homepage integration and anchor link wiring
 
 ### Phase 5: Local Identity & About
 **Goal:** The site communicates that Town & Country is a real, local, family-owned business with deep community roots -- the trust angle that corporate furniture sites cannot replicate.
@@ -166,7 +164,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | 1. Foundation & Brand System | 3/3 | Complete | 2026-03-02 |
 | 2. Navigation & Layout Shell | 2/2 | Complete | 2026-03-02 |
 | 3. Homepage Hero & Trust Strip | 2/2 | Complete | 2026-03-02 |
-| 4. Product Showcase | 0/5 | Not started | - |
+| 4. Product Showcase | 0/3 | Not started | - |
 | 5. Local Identity & About | 0/3 | Not started | - |
 | 6. Contact & Conversion | 0/3 | Not started | - |
 | 7. SEO, Analytics & Metadata | 0/4 | Not started | - |
