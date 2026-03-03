@@ -21,7 +21,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Homepage Hero & Trust Strip** - Primary landing experience with video hero and trust signals
 - [x] **Phase 4: Product Showcase** - La-Z-Boy and Ashley featured products with video and optimized imagery
 - [x] **Phase 5: Local Identity & About** - Town & Country's story, partner badges, and local service messaging
-- [ ] **Phase 6: Contact & Conversion** - Map, contact form, directions, and conversion endpoints
+- [x] **Phase 6: Contact & Conversion** - Map, contact form, directions, and conversion endpoints
 - [ ] **Phase 7: SEO, Analytics & Metadata** - Structured data, social sharing, GA4 tracking, and Nessus documentation
 - [ ] **Phase 8: Responsive Polish & Deployment** - Mobile-first audit, accessibility pass, and Vercel production deploy
 
@@ -120,8 +120,8 @@ Plans:
   3. A "Get Directions" button opens Google Maps driving directions to the store address
 
 Plans:
-- [ ] 06-01-PLAN.md -- Build contact section with Google Maps embed, store info, directions, and homepage integration
-- [ ] 06-02-PLAN.md -- Build contact form with Zod validation and Resend email forwarding
+- [x] 06-01-PLAN.md -- Build contact section with Google Maps embed, store info, directions, and homepage integration
+- [x] 06-02-PLAN.md -- Build contact form with Zod validation and Resend email forwarding
 
 ### Phase 7: SEO, Analytics & Metadata
 **Goal:** The site is discoverable by search engines for Farmville furniture queries, shares well on social media, and tracks every meaningful user interaction for business intelligence.
@@ -169,6 +169,6 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | 3. Homepage Hero & Trust Strip | 2/2 | Complete | 2026-03-02 |
 | 4. Product Showcase | 3/3 | Complete (content deps) | 2026-03-02 |
 | 5. Local Identity & About | 2/2 | Complete | 2026-03-03 |
-| 6. Contact & Conversion | 0/2 | Not started | - |
+| 6. Contact & Conversion | 2/2 | Complete | 2026-03-03 |
 | 7. SEO, Analytics & Metadata | 0/4 | Not started | - |
 | 8. Responsive Polish & Deployment | 0/4 | Not started | - |

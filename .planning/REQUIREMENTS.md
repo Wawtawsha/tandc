@@ -33,10 +33,10 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Contact & Conversion
 
 - [ ] **CONV-01**: Phone number displayed prominently in header on every page, tap-to-call on mobile
-- [ ] **CONV-02**: Google Maps embed shows store location with driving directions link
-- [ ] **CONV-03**: Contact form captures name, email, phone (optional), and message -- submissions forwarded to store email
+- [x] **CONV-02**: Google Maps embed shows store location with driving directions link
+- [x] **CONV-03**: Contact form captures name, email, phone (optional), and message -- submissions forwarded to store email
 - [ ] **CONV-04**: Store hours displayed in footer on every page and prominently in contact section
-- [ ] **CONV-05**: "Get Directions" button links to Google Maps directions to 5301 Farmville Rd, Farmville, VA 23901
+- [x] **CONV-05**: "Get Directions" button links to Google Maps directions to 5301 Farmville Rd, Farmville, VA 23901
 
 ### Technical & SEO
 
@@ -116,10 +116,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TRUST-03 | Phase 5 | Complete |
 | TRUST-04 | Phase 5 | Complete |
 | CONV-01 | Phase 2 | Complete |
-| CONV-02 | Phase 6 | Pending |
-| CONV-03 | Phase 6 | Pending |
+| CONV-02 | Phase 6 | Complete |
+| CONV-03 | Phase 6 | Complete |
 | CONV-04 | Phase 2 | Complete |
-| CONV-05 | Phase 6 | Pending |
+| CONV-05 | Phase 6 | Complete |
 | TECH-01 | Phase 7 | Pending |
 | TECH-02 | Phase 7 | Pending |
 | TECH-03 | Phase 7 | Pending |
@@ -140,4 +140,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-03-02*
-*Last updated: 2026-03-03 after Phase 5 completion*
+*Last updated: 2026-03-03 after Phase 6 completion*
