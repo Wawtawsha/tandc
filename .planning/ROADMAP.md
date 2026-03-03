@@ -98,17 +98,16 @@ Plans:
 **Goal:** The site communicates that Town & Country is a real, local, family-owned business with deep community roots -- the trust angle that corporate furniture sites cannot replicate.
 **Depends on:** Phase 2
 **Requirements:** TRUST-01, TRUST-02, TRUST-03, TRUST-04
+**Plans:** 2 plans
 **Success Criteria** (what must be TRUE):
   1. An About Us section tells Town & Country's story as a long-standing, family-owned Farmville business
   2. "Authorized La-Z-Boy Dealer" and "Ashley Furniture Partner" badges display in the header and/or footer
   3. Local delivery messaging is prominent -- "We deliver personally" language that differentiates from corporate delivery complaints
   4. The About section includes placeholder slots for store exterior/interior photos, ready for client-provided imagery
-**Plans:** TBD
 
 Plans:
-- [ ] 05-01: Build About Us section with story content and photo placeholders
-- [ ] 05-02: Implement dual-brand partner badges (La-Z-Boy and Ashley)
-- [ ] 05-03: Build local delivery and service messaging components
+- [ ] 05-01-PLAN.md -- Build About page with story narrative, photo placeholders, delivery promise, and SEO metadata
+- [ ] 05-02-PLAN.md -- Add dual-brand partner badges to footer
 
 ### Phase 6: Contact & Conversion
 **Goal:** A visitor who is ready to act can immediately get directions, submit a question, or find the store on a map -- every conversion path is one click away.
@@ -170,7 +169,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | 2. Navigation & Layout Shell | 2/2 | Complete | 2026-03-02 |
 | 3. Homepage Hero & Trust Strip | 2/2 | Complete | 2026-03-02 |
 | 4. Product Showcase | 3/3 | Complete (content deps) | 2026-03-02 |
-| 5. Local Identity & About | 0/3 | Not started | - |
+| 5. Local Identity & About | 0/2 | Planned | - |
 | 6. Contact & Conversion | 0/3 | Not started | - |
 | 7. SEO, Analytics & Metadata | 0/4 | Not started | - |
 | 8. Responsive Polish & Deployment | 0/4 | Not started | - |
