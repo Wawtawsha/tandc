@@ -9,9 +9,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage & Navigation
 
-- [ ] **HOME-01**: Homepage displays full-width hero section with Ashley marketing video, headline text, and prominent CTA buttons (Call Us, Get Directions)
-- [ ] **HOME-02**: Trust signal strip displays below hero with icons: Local Delivery, Family Owned, Financing Available, Authorized Dealer
-- [ ] **HOME-03**: Product category grid shows visual cards for furniture categories (Recliners, Sofas, Sectionals, Lift Chairs, Living Room, Bedroom) linking to showcase sections
+- [x] **HOME-01**: Homepage displays full-width hero section with Ashley marketing video, headline text, and prominent CTA buttons (Call Us, Get Directions)
+- [x] **HOME-02**: Trust signal strip displays below hero with icons: Local Delivery, Family Owned, Financing Available, Authorized Dealer
+- [x] **HOME-03**: Product category grid shows visual cards for furniture categories (Recliners, Sofas, Sectionals, Lift Chairs, Living Room, Bedroom) linking to showcase sections
 - [ ] **HOME-04**: Sticky navigation bar with Town & Country logo, nav links, and phone number; collapses to hamburger menu on mobile
 - [ ] **HOME-05**: Navigation phone number is click-to-call on mobile devices
 
@@ -101,9 +101,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HOME-01 | Phase 3 | Pending |
-| HOME-02 | Phase 3 | Pending |
-| HOME-03 | Phase 3 | Pending |
+| HOME-01 | Phase 3 | Complete |
+| HOME-02 | Phase 3 | Complete |
+| HOME-03 | Phase 3 | Complete |
 | HOME-04 | Phase 2 | Complete |
 | HOME-05 | Phase 2 | Complete |
 | PROD-01 | Phase 4 | Pending |
