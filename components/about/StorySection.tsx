@@ -45,11 +45,11 @@ export const StorySection: FC = () => {
             </h2>
 
             <p className="text-muted leading-relaxed">
-              For over two decades, Town & Country Furniture has been helping Farmville families find the perfect furniture for their homes. We're not a corporate chain — we're your neighbors, right here in Prince Edward County.
+              For over two decades, Town & Country Furniture has been helping Farmville families find the perfect furniture for their homes. We're not a corporate chain. We're your neighbors, right here in Prince Edward County.
             </p>
 
             <p className="text-muted leading-relaxed">
-              As an authorized La-Z-Boy dealer and Ashley Furniture partner, we bring you the quality and selection you deserve with the personal touch you won't find anywhere else. When you shop with us, you're not just another order number — you know our names, and we know yours.
+              As an authorized La-Z-Boy dealer and Ashley Furniture partner, we bring you the quality and selection you deserve with the personal touch you won't find anywhere else. When you shop with us, you're not just another order number. You know our names, and we know yours.
             </p>
 
             <p className="text-muted leading-relaxed">
