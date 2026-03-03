@@ -40,10 +40,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Technical & SEO
 
-- [ ] **TECH-01**: FurnitureStore schema.org structured data on all pages -- name, address, phone, hours, brand affiliations
-- [ ] **TECH-02**: OpenGraph metadata (og:image, og:title, og:description) on every page for social sharing previews
-- [ ] **TECH-03**: Google Analytics 4 with comprehensive event tracking -- page views, phone clicks, direction clicks, form submissions, video plays, category clicks, scroll depth, CTA interactions
-- [ ] **TECH-04**: Analytics event layer documented thoroughly for future Nessus integration -- event names, parameters, data schema, and integration points all documented
+- [x] **TECH-01**: FurnitureStore schema.org structured data on all pages -- name, address, phone, hours, brand affiliations
+- [x] **TECH-02**: OpenGraph metadata (og:image, og:title, og:description) on every page for social sharing previews
+- [x] **TECH-03**: Google Analytics 4 with comprehensive event tracking -- page views, phone clicks, direction clicks, form submissions, video plays, category clicks, scroll depth, CTA interactions
+- [x] **TECH-04**: Analytics event layer documented thoroughly for future Nessus integration -- event names, parameters, data schema, and integration points all documented
 - [~] **TECH-05**: All images served as WebP/AVIF with responsive sizing and lazy loading; LCP target under 3 seconds on mobile 4G *(infrastructure wired, verification pending real images)*
 - [ ] **TECH-06**: Site deployed to Vercel with production build, custom domain support configured
 - [ ] **TECH-07**: Mobile-first responsive design -- single column on mobile, grid layouts on tablet/desktop, 48px minimum touch targets
@@ -120,10 +120,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONV-03 | Phase 6 | Complete |
 | CONV-04 | Phase 2 | Complete |
 | CONV-05 | Phase 6 | Complete |
-| TECH-01 | Phase 7 | Pending |
-| TECH-02 | Phase 7 | Pending |
-| TECH-03 | Phase 7 | Pending |
-| TECH-04 | Phase 7 | Pending |
+| TECH-01 | Phase 7 | Complete |
+| TECH-02 | Phase 7 | Complete |
+| TECH-03 | Phase 7 | Complete |
+| TECH-04 | Phase 7 | Complete |
 | TECH-05 | Phase 4 | Partial (infra wired, needs images) |
 | TECH-06 | Phase 8 | Pending |
 | TECH-07 | Phase 8 | Pending |
