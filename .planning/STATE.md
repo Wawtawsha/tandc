@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 3 of 8 (Homepage Hero & Trust Strip)
-Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-03-02 -- Phase 2 complete (2/2 plans executed, verified)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-03-02 -- Completed 03-01-PLAN.md (hero and trust strip components)
 
-Progress: [██░░░░░░░░] 25%
+Progress: [███░░░░░░░] 30%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: --
-- Total execution time: --
+- Total plans completed: 6
+- Average duration: 1min 52sec
+- Total execution time: 6min 52sec
 
 **By Phase:**
 
@@ -29,9 +29,10 @@ Progress: [██░░░░░░░░] 25%
 |-------|-------|-------|----------|
 | 1. Foundation & Brand System | 3/3 | -- | -- |
 | 2. Navigation & Layout Shell | 2/2 | 3min 28sec | 1min 44sec |
+| 3. Homepage Hero & Trust Strip | 1/2 | 3min 24sec | 3min 24sec |
 
 **Recent Trend:**
-- Last 3 plans: 01-03 (verification), 02-02 (footer), 02-01 (nav phone)
+- Last 3 plans: 02-02 (footer), 02-01 (nav phone), 03-01 (hero/trust)
 - Trend: All passed first attempt
 
 *Updated after each plan completion*
@@ -56,6 +57,11 @@ Recent decisions affecting current work:
 - Mobile menu auto-closes on route change via useEffect pathname dependency
 - scroll-padding-top: 5rem prevents sticky nav from obscuring anchor targets
 - Phone number placed after nav links in desktop, separated by border in mobile
+- HeroVideo as Client Component, HeroSection as Server Component (boundary pushed deep)
+- Inline SVG icons for CTAs to keep HeroSection server-rendered
+- Lucide icons for trust signals (tree-shakeable, works in Server Components)
+- Placeholder YouTube videoId dQw4w9WgXcQ (to be replaced with actual Ashley marketing video)
+- Trust signal descriptions hidden on mobile (md:block) for compact layout
 
 ### Pending Todos
 
@@ -65,9 +71,10 @@ None yet.
 
 - Some product-specific content (exact best sellers, store history, staff photos) requires client input
 - La-Z-Boy dealer brand guidelines not fully known -- may need to verify required badge usage
+- Actual Ashley marketing video ID needed from client (currently using placeholder dQw4w9WgXcQ)
 
 ## Session Continuity
 
-Last session: 2026-03-02
-Stopped at: Phase 2 complete, ready for Phase 3 planning
+Last session: 2026-03-02T18:59:54Z
+Stopped at: Completed 03-01-PLAN.md (hero and trust strip components)
 Resume file: None
