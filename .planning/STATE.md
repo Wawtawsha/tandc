@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 6 of 8 (Contact & Conversion)
-Plan: 0 of 3 in current phase
-Status: Not started
-Last activity: 2026-03-03 -- Phase 5 verified and closed (7/7 must-haves)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-03-03 -- Completed 06-01-PLAN.md (Contact section with map)
 
-Progress: [██████░░░░] 62%
+Progress: [███████░░░] 68%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
-- Average duration: 1min 58sec
-- Total execution time: 25min 37sec
+- Total plans completed: 13
+- Average duration: 1min 57sec
+- Total execution time: 28min 40sec
 
 **By Phase:**
 
@@ -32,9 +32,10 @@ Progress: [██████░░░░] 62%
 | 3. Homepage Hero & Trust Strip | 2/2 | 5min 15sec | 2min 38sec |
 | 4. Product Showcase | 3/3 | 6min 36sec | 2min 12sec |
 | 5. Local Identity & About | 2/2 | 4min 8sec | 2min 4sec |
+| 6. Contact & Conversion | 1/3 | 3min 0sec | 3min 0sec |
 
 **Recent Trend:**
-- Last 3 plans: 05-02 (partner badges), 05-01 (about page), Phase 5 verified
+- Last 3 plans: 06-01 (contact section), 05-02 (partner badges), 05-01 (about page)
 - Trend: All passed first attempt
 
 *Updated after each plan completion*
@@ -87,6 +88,9 @@ Recent decisions affecting current work:
 - Photo placeholders use Lucide Camera icon with oklch backgrounds and "Photo Coming Soon" text
 - Basic FurnitureStore JSON-LD in About page (Phase 7 will expand with geo/images)
 - Google Maps directions link uses API format for universal device support
+- MapEmbed with graceful degradation if NEXT_PUBLIC_GOOGLE_MAPS_API_KEY missing
+- ContactSection bg-surface for alternating section pattern (after VideoShowcase)
+- Contact sections use two-column grid (map/info left, form right)
 
 ### Pending Todos
 
@@ -98,11 +102,11 @@ None yet.
 - La-Z-Boy dealer brand guidelines not fully known -- may need to verify required badge usage
 - Actual Ashley marketing video ID needed from client (currently using placeholder dQw4w9WgXcQ)
 - Product photography not yet available (using oklch placeholder strategy)
-- Contact form anchor target (#contact) doesn't exist yet (planned for Phase 6)
 - About page needs 3 actual photos before launch: store exterior, showroom interior, team photo
+- NEXT_PUBLIC_GOOGLE_MAPS_API_KEY environment variable needed for full map embed (graceful fallback if missing)
 
 ## Session Continuity
 
 Last session: 2026-03-03
-Stopped at: Phase 5 verified and closed. Ready for Phase 6.
+Stopped at: Completed 06-01-PLAN.md (Contact section with Google Maps embed)
 Resume file: None
