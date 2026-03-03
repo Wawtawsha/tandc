@@ -19,7 +19,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Brand System** - Clone Shrike template, establish Town & Country visual identity and theming
 - [x] **Phase 2: Navigation & Layout Shell** - Persistent site structure with header, footer, phone, and hours
 - [x] **Phase 3: Homepage Hero & Trust Strip** - Primary landing experience with video hero and trust signals
-- [ ] **Phase 4: Product Showcase** - La-Z-Boy and Ashley featured products with video and optimized imagery
+- [x] **Phase 4: Product Showcase** - La-Z-Boy and Ashley featured products with video and optimized imagery
 - [ ] **Phase 5: Local Identity & About** - Town & Country's story, partner badges, and local service messaging
 - [ ] **Phase 6: Contact & Conversion** - Map, contact form, directions, and conversion endpoints
 - [ ] **Phase 7: SEO, Analytics & Metadata** - Structured data, social sharing, GA4 tracking, and Nessus documentation
@@ -85,9 +85,14 @@ Plans:
   5. All product images are served as WebP/AVIF through Next.js Image with responsive sizing, blur placeholders, and lazy loading -- LCP under 3 seconds on simulated mobile 4G
 
 Plans:
-- [ ] 04-01-PLAN.md -- Product data schema, typed catalog, and shared ProductCard component
-- [ ] 04-02-PLAN.md -- La-Z-Boy best sellers section, Ashley collections section, and video showcase
-- [ ] 04-03-PLAN.md -- Homepage integration and anchor link wiring
+- [x] 04-01-PLAN.md -- Product data schema, typed catalog, and shared ProductCard component
+- [x] 04-02-PLAN.md -- La-Z-Boy best sellers section, Ashley collections section, and video showcase
+- [x] 04-03-PLAN.md -- Homepage integration and anchor link wiring
+
+**Content Dependencies (not code gaps):**
+- Product images: All 10 products use oklch placeholders. Infrastructure wired for Next.js Image. Needs client photography.
+- Video IDs: VideoShowcase uses placeholder YouTube IDs. Needs real marketing video IDs from client.
+- #contact anchor: "See In Store" CTAs target #contact. Resolves when Phase 6 builds contact section.
 
 ### Phase 5: Local Identity & About
 **Goal:** The site communicates that Town & Country is a real, local, family-owned business with deep community roots -- the trust angle that corporate furniture sites cannot replicate.
@@ -164,7 +169,7 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | 1. Foundation & Brand System | 3/3 | Complete | 2026-03-02 |
 | 2. Navigation & Layout Shell | 2/2 | Complete | 2026-03-02 |
 | 3. Homepage Hero & Trust Strip | 2/2 | Complete | 2026-03-02 |
-| 4. Product Showcase | 0/3 | Not started | - |
+| 4. Product Showcase | 3/3 | Complete (content deps) | 2026-03-02 |
 | 5. Local Identity & About | 0/3 | Not started | - |
 | 6. Contact & Conversion | 0/3 | Not started | - |
 | 7. SEO, Analytics & Metadata | 0/4 | Not started | - |

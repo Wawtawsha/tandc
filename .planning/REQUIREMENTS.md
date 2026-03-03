@@ -17,11 +17,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Product Showcase
 
-- [ ] **PROD-01**: La-Z-Boy best sellers section displays featured products with images, product names, and "See In Store" CTAs
-- [ ] **PROD-02**: Ashley collections section displays featured products (Next-Gen & Nuvella, lifestyle pieces) with images and "See In Store" CTAs
-- [ ] **PROD-03**: Video product showcases embed marketing videos (self-gliding chair, sofa comparison, outdoor furniture) as playable content
-- [ ] **PROD-04**: Product sections are configurable -- store can update featured items by editing data files without code changes
-- [ ] **PROD-05**: All product imagery optimized through Next.js Image (WebP/AVIF, responsive sizing, blur placeholders)
+- [x] **PROD-01**: La-Z-Boy best sellers section displays featured products with images, product names, and "See In Store" CTAs
+- [x] **PROD-02**: Ashley collections section displays featured products (Next-Gen & Nuvella, lifestyle pieces) with images and "See In Store" CTAs
+- [x] **PROD-03**: Video product showcases embed marketing videos (self-gliding chair, sofa comparison, outdoor furniture) as playable content *(placeholder video IDs — needs client marketing videos)*
+- [x] **PROD-04**: Product sections are configurable -- store can update featured items by editing data files without code changes
+- [~] **PROD-05**: All product imagery optimized through Next.js Image (WebP/AVIF, responsive sizing, blur placeholders) *(infrastructure wired, LCP untestable without real images)*
 
 ### Local Identity & Trust
 
@@ -44,7 +44,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **TECH-02**: OpenGraph metadata (og:image, og:title, og:description) on every page for social sharing previews
 - [ ] **TECH-03**: Google Analytics 4 with comprehensive event tracking -- page views, phone clicks, direction clicks, form submissions, video plays, category clicks, scroll depth, CTA interactions
 - [ ] **TECH-04**: Analytics event layer documented thoroughly for future Nessus integration -- event names, parameters, data schema, and integration points all documented
-- [ ] **TECH-05**: All images served as WebP/AVIF with responsive sizing and lazy loading; LCP target under 3 seconds on mobile 4G
+- [~] **TECH-05**: All images served as WebP/AVIF with responsive sizing and lazy loading; LCP target under 3 seconds on mobile 4G *(infrastructure wired, verification pending real images)*
 - [ ] **TECH-06**: Site deployed to Vercel with production build, custom domain support configured
 - [ ] **TECH-07**: Mobile-first responsive design -- single column on mobile, grid layouts on tablet/desktop, 48px minimum touch targets
 
@@ -106,11 +106,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-03 | Phase 3 | Complete |
 | HOME-04 | Phase 2 | Complete |
 | HOME-05 | Phase 2 | Complete |
-| PROD-01 | Phase 4 | Pending |
-| PROD-02 | Phase 4 | Pending |
-| PROD-03 | Phase 4 | Pending |
-| PROD-04 | Phase 4 | Pending |
-| PROD-05 | Phase 4 | Pending |
+| PROD-01 | Phase 4 | Complete |
+| PROD-02 | Phase 4 | Complete |
+| PROD-03 | Phase 4 | Complete (placeholder video IDs) |
+| PROD-04 | Phase 4 | Complete |
+| PROD-05 | Phase 4 | Partial (infra wired, needs images) |
 | TRUST-01 | Phase 5 | Pending |
 | TRUST-02 | Phase 5 | Pending |
 | TRUST-03 | Phase 5 | Pending |
@@ -124,7 +124,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TECH-02 | Phase 7 | Pending |
 | TECH-03 | Phase 7 | Pending |
 | TECH-04 | Phase 7 | Pending |
-| TECH-05 | Phase 4 | Pending |
+| TECH-05 | Phase 4 | Partial (infra wired, needs images) |
 | TECH-06 | Phase 8 | Pending |
 | TECH-07 | Phase 8 | Pending |
 | DSGN-01 | Phase 1 | Complete |
@@ -140,4 +140,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-03-02*
-*Last updated: 2026-03-02 after roadmap creation*
+*Last updated: 2026-03-02 after Phase 4 completion*

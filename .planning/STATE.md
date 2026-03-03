@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-03-02)
 
 **Core value:** When someone in Farmville searches for furniture, they find Town & Country, see what's available, trust the local store, and either call or walk in.
-**Current focus:** Phase 4 - Product Showcase
+**Current focus:** Phase 5 - Local Identity & About
 
 ## Current Position
 
-Phase: 4 of 8 (Product Showcase)
-Plan: 3 of 3 in current phase
-Status: Phase complete
-Last activity: 2026-03-02 -- Completed 04-03-PLAN.md (Homepage Product Integration)
+Phase: 5 of 8 (Local Identity & About)
+Plan: 0 of 3 in current phase
+Status: Not started
+Last activity: 2026-03-02 -- Phase 4 verified and closed (4/5 must-haves, content deps noted)
 
-Progress: [█████░░░░░] 48%
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
@@ -90,10 +90,10 @@ None yet.
 - La-Z-Boy dealer brand guidelines not fully known -- may need to verify required badge usage
 - Actual Ashley marketing video ID needed from client (currently using placeholder dQw4w9WgXcQ)
 - Product photography not yet available (using oklch placeholder strategy)
-- Contact form anchor target (#contact) doesn't exist yet (planned for Phase 5)
+- Contact form anchor target (#contact) doesn't exist yet (planned for Phase 6)
 
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 04-03-PLAN.md (Homepage Product Integration) - Phase 4 complete
+Stopped at: Phase 4 verified and closed. Ready for Phase 5.
 Resume file: None
