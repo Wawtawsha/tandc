@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-03-02)
 
 **Core value:** When someone in Farmville searches for furniture, they find Town & Country, see what's available, trust the local store, and either call or walk in.
-**Current focus:** Phase 8 - Responsive Polish & Deployment
+**Current focus:** All phases complete. Milestone ready for audit.
 
 ## Current Position
 
 Phase: 8 of 8 (Responsive Polish & Deployment)
-Plan: 3 of 4 in current phase
-Status: In progress
-Last activity: 2026-03-03 -- Completed 08-03-PLAN.md (Production Build & Deployment)
+Plan: 4 of 4 in current phase
+Status: Complete -- all phases verified
+Last activity: 2026-03-03 -- Phase 8 verified and closed
 
-Progress: [█████████░] 95%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 20
-- Average duration: 2min 56sec
-- Total execution time: 1h 16min 53sec
+- Total plans completed: 21
+- Average duration: ~3min
+- Total execution time: ~1h 30min
 
 **By Phase:**
 
@@ -34,118 +34,30 @@ Progress: [█████████░] 95%
 | 5. Local Identity & About | 2/2 | 4min 8sec | 2min 4sec |
 | 6. Contact & Conversion | 2/2 | 6min 30sec | 3min 15sec |
 | 7. SEO, Analytics & Metadata | 3/3 | 19min 32sec | 6min 31sec |
-| 8. Responsive Polish & Deployment | 3/4 | 25min 11sec | 8min 24sec |
-
-**Recent Trend:**
-- Last 3 plans: 08-03 (production build & deployment), 08-02 (WCAG AA accessibility), 08-01 (mobile responsive)
-- Trend: All passed first attempt
-
-*Updated after each plan completion*
+| 8. Responsive Polish & Deployment | 4/4 | ~28min | ~7min |
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- Store-brand-primary identity chosen (avoids La-Z-Boy vs Ashley color clash)
-- Clone from Shrike template (proven production codebase)
-- Hardcoded content over CMS for v1
-- Free font alternatives over licensed brand fonts
-- useReducedMotion rewritten to useSyncExternalStore for React 19 compliance
-- useScrollReveal refactored to derive visibility instead of setState in effect
-- Footer rendered as server component (no client-side state needed for currentYear)
-- Store hours and footer links hardcoded inline for v1 simplicity
-- Display font applied to footer headings via inline style for consistency
-- Phone number (434) 223-8163 added as primary CTA in navigation header
-- Mobile menu auto-closes on route change via useEffect pathname dependency
-- scroll-padding-top: 5rem prevents sticky nav from obscuring anchor targets
-- Phone number placed after nav links in desktop, separated by border in mobile
-- HeroVideo as Client Component, HeroSection as Server Component (boundary pushed deep)
-- Inline SVG icons for CTAs to keep HeroSection server-rendered
-- Lucide icons for trust signals (tree-shakeable, works in Server Components)
-- Placeholder YouTube videoId dQw4w9WgXcQ (to be replaced with actual Ashley marketing video)
-- Trust signal descriptions hidden on mobile (md:block) for compact layout
-- CategoryGrid uses placeholder oklch color backgrounds until product images available
-- Category cards use 4:3 aspect ratio to prevent layout shift when images added
-- Anchor links to showcase sections (e.g., #recliners) for future Phase 4 navigation
-- Homepage page.tsx is Server Component composing three Server Components
-- Product data in TypeScript files over JSON for type safety and autocomplete
-- image: undefined for placeholder strategy (not magic string)
-- Category values match CategoryGrid anchor IDs for consistency
-- Filter helpers are ONLY way components access products (encapsulation)
-- ProductCard is Server Component (no client-side state)
-- See In Store CTAs link to #contact (not Buy Now)
-- LaZBoySection and AshleySection are Server Components using ProductCard
-- Both brand sections use same ProductCard (no brand-specific styling)
-- VideoShowcase is Client Component because it renders HeroVideo
-- Alternating section backgrounds: LaZBoySection bg-background, AshleySection bg-surface
-- Homepage remains Server Component - all product sections compose as children
-- LaZBoySection first card uses priority={true} for LCP optimization
-- Partner badges inline in Footer (not separate component) for simplicity
-- Award icon pattern for certifications/partnerships (matches TrustStrip styling)
-- Partner badges responsive: flex-col on mobile, sm:flex-row on desktop
-- About page uses personal accountability language (not corporate e-commerce speak)
-- Photo placeholders use Lucide Camera icon with oklch backgrounds and "Photo Coming Soon" text
-- Basic FurnitureStore JSON-LD in About page (Phase 7 will expand with geo/images)
-- Google Maps directions link uses API format for universal device support
-- MapEmbed with graceful degradation if NEXT_PUBLIC_GOOGLE_MAPS_API_KEY missing
-- ContactSection bg-surface for alternating section pattern (after VideoShowcase)
-- Contact sections use two-column grid (map/info left, form right)
-- Zod for contact form validation with field-level error messages
-- Resend for email delivery (onboarding@resend.dev until custom domain)
-- useActionState for Server Action integration (React 19)
-- Phone field optional with no format validation (simplicity over strict regex)
-- Form resets after success via useEffect watching state.success
-- Server Actions ('use server') keep API keys server-side only
-- useFormStatus in child component for submit button pending state
-- RGB colors for next/og ImageResponse (not OKLCH - not supported)
-- BreadcrumbList JSON-LD on About page instead of duplicate FurnitureStore
-- GoogleAnalytics component after </body> before </html> per Next.js pattern
-- Conditional GA rendering based on NEXT_PUBLIC_GA_MEASUREMENT_ID presence
-- GA4 Enhanced Measurement provides automatic scroll depth tracking
-- Client component wrappers (PhoneLink, DirectionsLink, CategoryLink, CTALink) for tracking in Server Components
-- Server Components import client wrappers to add tracking without becoming client components
-- Location parameters distinguish same action in different contexts (hero vs footer vs nav)
-- Navigation uses sendGAEvent directly (already client component, no wrapper needed)
-- HeroVideo receives location prop from HeroSection for video tracking integration
-- HeroVideo location prop is required (no default) to enforce explicit location tracking
-- Video play event fires on onIframeAdded for reliable play detection with react-lite-youtube-embed
-- Form conversion funnel uses two events (form_submit + form_submit_success) for funnel analysis
-- enablejsapi=1 on YouTube embeds enables GA4 Enhanced Measurement video engagement tracking
-- TRACKING_PLAN.md documents all events, parameters, and Nessus integration as data contract
-- Use min-h-[48px] (not h-12) to allow content to grow naturally beyond 48px minimum
-- Apply flex/inline-flex items-center pattern for vertical centering within touch targets
-- Reduce mobile gaps (gap-8 lg:gap-12) for compact mobile spacing
-- Responsive text sizing (text-lg md:text-xl) for better mobile readability
-- focus-visible (not focus) for keyboard-only focus indicators (doesn't trigger on mouse clicks)
-- Consistent focus indicator pattern: focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent
-- TrustStrip labels are spans (not headings) - labels/badges don't need heading hierarchy
-- Placeholder divs use role="img" + aria-label for screen reader accessibility
-- Decorative SVG icons marked aria-hidden="true" to prevent screen reader announcement
-- .env.example documents env vars with empty values (not placeholder secrets) for security
-- Deploy without env vars to verify graceful fallbacks work in production
-- Vercel auto-detected settings (Next.js framework, default build) require no overrides
+All decisions from phases 1-8 accumulated in PROJECT.md.
 
 ### Pending Todos
 
-None yet.
+None.
 
 ### Blockers/Concerns
 
-- Some product-specific content (exact best sellers, store history, staff photos) requires client input
-- La-Z-Boy dealer brand guidelines not fully known -- may need to verify required badge usage
-- Actual Ashley marketing video ID needed from client (currently using placeholder dQw4w9WgXcQ)
 - Product photography not yet available (using oklch placeholder strategy)
 - About page needs 3 actual photos before launch: store exterior, showroom interior, team photo
-- NEXT_PUBLIC_GA_MEASUREMENT_ID needed for GA4 tracking (client provides G-XXXXXXXXXX ID)
-- NEXT_PUBLIC_GOOGLE_MAPS_API_KEY environment variable needed for full map embed (graceful fallback if missing)
-- RESEND_API_KEY environment variable required for contact form email delivery (create free Resend account)
-- No GitHub remote configured - user needs to create repo and add remote to push code
+- Actual Ashley marketing video ID needed from client (currently using placeholder dQw4w9WgXcQ)
+- NEXT_PUBLIC_GA_MEASUREMENT_ID needed for GA4 tracking
+- NEXT_PUBLIC_GOOGLE_MAPS_API_KEY needed for full map embed
+- RESEND_API_KEY needed for contact form email delivery
+- No GitHub remote configured -- user needs to create repo and add remote
 
 ## Session Continuity
 
 Last session: 2026-03-03
-Stopped at: Completed 08-03-PLAN.md (Production Build & Deployment). Site deployed to https://tandc-six.vercel.app. Ready for 08-04 (Performance Optimization).
+Stopped at: All 8 phases complete. Site live at https://tandc-six.vercel.app. Milestone ready for audit.
 Resume file: None

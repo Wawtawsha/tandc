@@ -23,7 +23,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 5: Local Identity & About** - Town & Country's story, partner badges, and local service messaging
 - [x] **Phase 6: Contact & Conversion** - Map, contact form, directions, and conversion endpoints
 - [x] **Phase 7: SEO, Analytics & Metadata** - Structured data, social sharing, GA4 tracking, and Nessus documentation
-- [ ] **Phase 8: Responsive Polish & Deployment** - Mobile-first audit, accessibility pass, and Vercel production deploy
+- [x] **Phase 8: Responsive Polish & Deployment** - Mobile-first audit, accessibility pass, and Vercel production deploy
 
 ## Phase Details
 
@@ -150,10 +150,10 @@ Plans:
   3. The site is deployed to Vercel with a successful production build and custom domain support configured
 
 Plans:
-- [ ] 08-01-PLAN.md -- Mobile-first responsive audit: 48px touch targets and layout fixes at 375px/768px/1280px
-- [ ] 08-02-PLAN.md -- WCAG AA accessibility pass: focus-visible indicators, heading hierarchy, alt text, semantic HTML
-- [ ] 08-03-PLAN.md -- Production build verification and Vercel preview deployment
-- [ ] 08-04-PLAN.md -- Human verification of mobile, desktop, and keyboard navigation (checkpoint)
+- [x] 08-01-PLAN.md -- Mobile-first responsive audit: 48px touch targets and layout fixes at 375px/768px/1280px
+- [x] 08-02-PLAN.md -- WCAG AA accessibility pass: focus-visible indicators, heading hierarchy, alt text, semantic HTML
+- [x] 08-03-PLAN.md -- Production build verification and Vercel preview deployment
+- [x] 08-04-PLAN.md -- Human verification of mobile, desktop, and keyboard navigation (checkpoint)
 
 ## Progress
 
@@ -170,4 +170,4 @@ Note: Phases 5 and 6 depend only on Phase 2 and could execute in parallel with P
 | 5. Local Identity & About | 2/2 | Complete | 2026-03-03 |
 | 6. Contact & Conversion | 2/2 | Complete | 2026-03-03 |
 | 7. SEO, Analytics & Metadata | 3/3 | Complete | 2026-03-03 |
-| 8. Responsive Polish & Deployment | 0/4 | Not started | - |
+| 8. Responsive Polish & Deployment | 4/4 | Complete | 2026-03-03 |

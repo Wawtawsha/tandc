@@ -12,8 +12,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **HOME-01**: Homepage displays full-width hero section with Ashley marketing video, headline text, and prominent CTA buttons (Call Us, Get Directions)
 - [x] **HOME-02**: Trust signal strip displays below hero with icons: Local Delivery, Family Owned, Financing Available, Authorized Dealer
 - [x] **HOME-03**: Product category grid shows visual cards for furniture categories (Recliners, Sofas, Sectionals, Lift Chairs, Living Room, Bedroom) linking to showcase sections
-- [ ] **HOME-04**: Sticky navigation bar with Town & Country logo, nav links, and phone number; collapses to hamburger menu on mobile
-- [ ] **HOME-05**: Navigation phone number is click-to-call on mobile devices
+- [x] **HOME-04**: Sticky navigation bar with Town & Country logo, nav links, and phone number; collapses to hamburger menu on mobile
+- [x] **HOME-05**: Navigation phone number is click-to-call on mobile devices
 
 ### Product Showcase
 
@@ -32,10 +32,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Contact & Conversion
 
-- [ ] **CONV-01**: Phone number displayed prominently in header on every page, tap-to-call on mobile
+- [x] **CONV-01**: Phone number displayed prominently in header on every page, tap-to-call on mobile
 - [x] **CONV-02**: Google Maps embed shows store location with driving directions link
 - [x] **CONV-03**: Contact form captures name, email, phone (optional), and message -- submissions forwarded to store email
-- [ ] **CONV-04**: Store hours displayed in footer on every page and prominently in contact section
+- [x] **CONV-04**: Store hours displayed in footer on every page and prominently in contact section
 - [x] **CONV-05**: "Get Directions" button links to Google Maps directions to 5301 Farmville Rd, Farmville, VA 23901
 
 ### Technical & SEO
@@ -45,16 +45,16 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **TECH-03**: Google Analytics 4 with comprehensive event tracking -- page views, phone clicks, direction clicks, form submissions, video plays, category clicks, scroll depth, CTA interactions
 - [x] **TECH-04**: Analytics event layer documented thoroughly for future Nessus integration -- event names, parameters, data schema, and integration points all documented
 - [~] **TECH-05**: All images served as WebP/AVIF with responsive sizing and lazy loading; LCP target under 3 seconds on mobile 4G *(infrastructure wired, verification pending real images)*
-- [ ] **TECH-06**: Site deployed to Vercel with production build, custom domain support configured
-- [ ] **TECH-07**: Mobile-first responsive design -- single column on mobile, grid layouts on tablet/desktop, 48px minimum touch targets
+- [x] **TECH-06**: Site deployed to Vercel with production build, custom domain support configured
+- [x] **TECH-07**: Mobile-first responsive design -- single column on mobile, grid layouts on tablet/desktop, 48px minimum touch targets
 
 ### Design & Brand
 
-- [ ] **DSGN-01**: Town & Country's own visual identity as primary -- custom color palette (warm, inviting, neutral) distinct from both La-Z-Boy and Ashley brand colors
-- [ ] **DSGN-02**: Typography uses free Google Fonts -- no licensed brand fonts. Clean serif + sans-serif pairing.
-- [ ] **DSGN-03**: Smooth scroll behavior with Lenis (from Shrike template)
-- [ ] **DSGN-04**: Page transitions between routes (from Shrike template)
-- [ ] **DSGN-05**: WCAG AA accessible -- skip-to-content, semantic HTML, alt text, keyboard navigation, reduced-motion support
+- [x] **DSGN-01**: Town & Country's own visual identity as primary -- custom color palette (warm, inviting, neutral) distinct from both La-Z-Boy and Ashley brand colors
+- [x] **DSGN-02**: Typography uses free Google Fonts -- no licensed brand fonts. Clean serif + sans-serif pairing.
+- [x] **DSGN-03**: Smooth scroll behavior with Lenis (from Shrike template)
+- [x] **DSGN-04**: Page transitions between routes (from Shrike template)
+- [x] **DSGN-05**: WCAG AA accessible -- skip-to-content, semantic HTML, alt text, keyboard navigation, reduced-motion support
 
 ## v2 Requirements
 
@@ -125,13 +125,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TECH-03 | Phase 7 | Complete |
 | TECH-04 | Phase 7 | Complete |
 | TECH-05 | Phase 4 | Partial (infra wired, needs images) |
-| TECH-06 | Phase 8 | Pending |
-| TECH-07 | Phase 8 | Pending |
+| TECH-06 | Phase 8 | Complete |
+| TECH-07 | Phase 8 | Complete |
 | DSGN-01 | Phase 1 | Complete |
 | DSGN-02 | Phase 1 | Complete |
 | DSGN-03 | Phase 1 | Complete |
 | DSGN-04 | Phase 1 | Complete |
-| DSGN-05 | Phase 8 | Pending |
+| DSGN-05 | Phase 8 | Complete |
 
 **Coverage:**
 - v1 requirements: 31 total
@@ -140,4 +140,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-03-02*
-*Last updated: 2026-03-03 after Phase 6 completion*
+*Last updated: 2026-03-03 after Phase 8 completion*
