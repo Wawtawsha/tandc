@@ -5,6 +5,7 @@ import { CategoryGrid } from "@/components/categories/CategoryGrid";
 import { LaZBoySection } from "@/components/products/LaZBoySection";
 import { AshleySection } from "@/components/products/AshleySection";
 import { VideoShowcase } from "@/components/products/VideoShowcase";
+import { ContactSection } from "@/components/contact/ContactSection";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -20,6 +21,7 @@ export default function Home() {
       <LaZBoySection />
       <AshleySection />
       <VideoShowcase />
+      <ContactSection />
     </main>
   );
 }
