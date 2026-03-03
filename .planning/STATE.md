@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 8 of 8 (Responsive Polish & Deployment)
-Plan: 2 of 4 in current phase
+Plan: 3 of 4 in current phase
 Status: In progress
-Last activity: 2026-03-03 -- Completed 08-02-PLAN.md (WCAG AA Accessibility Pass)
+Last activity: 2026-03-03 -- Completed 08-03-PLAN.md (Production Build & Deployment)
 
-Progress: [█████████░] 92%
+Progress: [█████████░] 95%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 19
-- Average duration: 2min 54sec
-- Total execution time: 1h 13min 22sec
+- Total plans completed: 20
+- Average duration: 2min 56sec
+- Total execution time: 1h 16min 53sec
 
 **By Phase:**
 
@@ -34,10 +34,10 @@ Progress: [█████████░] 92%
 | 5. Local Identity & About | 2/2 | 4min 8sec | 2min 4sec |
 | 6. Contact & Conversion | 2/2 | 6min 30sec | 3min 15sec |
 | 7. SEO, Analytics & Metadata | 3/3 | 19min 32sec | 6min 31sec |
-| 8. Responsive Polish & Deployment | 2/4 | 21min 40sec | 10min 50sec |
+| 8. Responsive Polish & Deployment | 3/4 | 25min 11sec | 8min 24sec |
 
 **Recent Trend:**
-- Last 3 plans: 08-02 (WCAG AA accessibility), 08-01 (mobile responsive), 07-03 (video & form tracking)
+- Last 3 plans: 08-03 (production build & deployment), 08-02 (WCAG AA accessibility), 08-01 (mobile responsive)
 - Trend: All passed first attempt
 
 *Updated after each plan completion*
@@ -124,6 +124,9 @@ Recent decisions affecting current work:
 - TrustStrip labels are spans (not headings) - labels/badges don't need heading hierarchy
 - Placeholder divs use role="img" + aria-label for screen reader accessibility
 - Decorative SVG icons marked aria-hidden="true" to prevent screen reader announcement
+- .env.example documents env vars with empty values (not placeholder secrets) for security
+- Deploy without env vars to verify graceful fallbacks work in production
+- Vercel auto-detected settings (Next.js framework, default build) require no overrides
 
 ### Pending Todos
 
@@ -139,9 +142,10 @@ None yet.
 - NEXT_PUBLIC_GA_MEASUREMENT_ID needed for GA4 tracking (client provides G-XXXXXXXXXX ID)
 - NEXT_PUBLIC_GOOGLE_MAPS_API_KEY environment variable needed for full map embed (graceful fallback if missing)
 - RESEND_API_KEY environment variable required for contact form email delivery (create free Resend account)
+- No GitHub remote configured - user needs to create repo and add remote to push code
 
 ## Session Continuity
 
 Last session: 2026-03-03
-Stopped at: Completed 08-02-PLAN.md (WCAG AA Accessibility Pass). Ready for 08-03 (Performance Optimization).
+Stopped at: Completed 08-03-PLAN.md (Production Build & Deployment). Site deployed to https://tandc-six.vercel.app. Ready for 08-04 (Performance Optimization).
 Resume file: None
