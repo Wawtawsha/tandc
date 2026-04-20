@@ -19,7 +19,8 @@ function isCatalogCategory(value: string): value is CatalogCategory {
     value === "sofas" ||
     value === "mattresses" ||
     value === "appliances" ||
-    value === "grills"
+    value === "grills" ||
+    value === "safes"
   );
 }
 

@@ -1,27 +1,7 @@
 import { CatalogCategory, CatalogProduct } from "./types";
 
-// ── 1.jpg ─────────────────────────────────────────────────────────────
+// ── 7.jpg ─────────────────────────────────────────────────────────────
 const SECTIONALS: CatalogProduct[] = [
-  {
-    slug: "sectional-browning-gloss-white",
-    category: "sectionals",
-    brand: "Browning",
-    title: "Browning / Gloss — 33 Silver Series",
-    priceLine: "$4,199.00",
-    imageSrc: "/products/1.jpg",
-    description: "Gloss White 33 Silver Series sectional with a clean showroom look and a premium feel.",
-  },
-  // ── 5.jpg ────────────────────────────────────────────────────────────
-  {
-    slug: "sectional-browning-crimson-two-tone",
-    category: "sectionals",
-    brand: "Browning",
-    title: "Browning / Two-Tone — 33 Silver Series",
-    priceLine: "$4,499.00",
-    imageSrc: "/products/5.jpg",
-    description: "Crimson Two-Tone 33 Silver Series sectional built to stand out in the showroom.",
-  },
-  // ── 7.jpg ────────────────────────────────────────────────────────────
   {
     slug: "sectional-ashley-5z-pittson",
     category: "sectionals",
@@ -33,33 +13,14 @@ const SECTIONALS: CatalogProduct[] = [
   },
 ];
 
-// ── 12.png ────────────────────────────────────────────────────────────
-// ── 13.jpg ────────────────────────────────────────────────────────────
-const RECLINERS: CatalogProduct[] = [
-  {
-    slug: "recliner-franklin-laurel-chair-half",
-    category: "recliners",
-    brand: "Franklin",
-    title: "Franklin Laurel — Chair and a Half",
-    priceLine: "$775.00",
-    imageSrc: "/products/12.png",
-    description: "The Laurel collection brings timeless elegance and extra comfort in a chair and a half silhouette. Matching sofa, loveseat, and ottoman available to order.",
-  },
-  {
-    slug: "recliner-franklin-teagan-chair-half",
-    category: "recliners",
-    brand: "Franklin",
-    title: "Franklin Teagan — Chair and a Half",
-    priceLine: "$1,049.95",
-    imageSrc: "/products/13.jpg",
-    description: "A roomy Teagan chair and a half from Franklin Corporation — built for comfort with scale to add extra seating.",
-  },
-];
+const RECLINERS: CatalogProduct[] = [];
 
 // ── 6.jpg / 6.5.jpg (same image, loveseat listing + sofa sub-price) ───
 // ── 8.jpg ─────────────────────────────────────────────────────────────
 // ── 9.jpg / 9.5.jpg (same image, sofa listing + loveseat sub-price) ───
 // ── 11.jpg ────────────────────────────────────────────────────────────
+// ── 12.png ────────────────────────────────────────────────────────────
+// ── 13.jpg ────────────────────────────────────────────────────────────
 const SOFAS: CatalogProduct[] = [
   {
     slug: "sofa-leesworth-power-loveseat",
@@ -99,6 +60,24 @@ const SOFAS: CatalogProduct[] = [
     imageSrc: "/products/11.jpg",
     description: "Laurel Loveseat (99220) — timeless elegance and a delightfully comfy seat. Chair and a half available for $875. Made in America.",
   },
+  {
+    slug: "sofa-franklin-laurel-chair-half",
+    category: "sofas",
+    brand: "Franklin",
+    title: "Franklin Laurel — Chair and a Half",
+    priceLine: "$775.00",
+    imageSrc: "/products/12.png",
+    description: "The Laurel collection brings timeless elegance and extra comfort in a chair and a half silhouette. Matching sofa, loveseat, and ottoman available to order.",
+  },
+  {
+    slug: "sofa-franklin-teagan-chair-half",
+    category: "sofas",
+    brand: "Franklin",
+    title: "Franklin Teagan — Chair and a Half",
+    priceLine: "$1,049.95",
+    imageSrc: "/products/13.jpg",
+    description: "A roomy Teagan chair and a half from Franklin Corporation — built for comfort with scale to add extra seating.",
+  },
 ];
 
 // ── 2.jpg ─────────────────────────────────────────────────────────────
@@ -107,7 +86,7 @@ const MATTRESSES: CatalogProduct[] = [
   {
     slug: "mattress-m311-memory-foam",
     category: "mattresses",
-    brand: "M311",
+    brand: "Mattress Tech",
     title: "M311 Series Memory Foam Firm",
     priceLine: "Queen: $999 | King: $1,099 | TXL: $669",
     imageSrc: "/products/2.jpg",
@@ -116,7 +95,7 @@ const MATTRESSES: CatalogProduct[] = [
   {
     slug: "mattress-timeless-cloud-o-pedic",
     category: "mattresses",
-    brand: "Timeless",
+    brand: "Mattress Tech",
     title: "Timeless Cloud-O-Pedic II (Black Oasis)",
     priceLine: "Twin: $849.95 | Full: $999.95 | Queen: $1,049.95 | King: $1,449.95",
     subPriceLine: "Foundation — Twin: $249.95 | Full: $289.95 | Queen: $329.95 | King: $469.95",
@@ -151,6 +130,29 @@ const GRILLS: CatalogProduct[] = [
   },
 ];
 
+// ── 1.jpg ─────────────────────────────────────────────────────────────
+// ── 5.jpg ─────────────────────────────────────────────────────────────
+const SAFES: CatalogProduct[] = [
+  {
+    slug: "safe-browning-gloss-white",
+    category: "safes",
+    brand: "Browning",
+    title: "Browning / Gloss — 33 Silver Series",
+    priceLine: "$4,199.00",
+    imageSrc: "/products/1.jpg",
+    description: "Gloss White 33 Silver Series safe with a clean showroom look and a premium feel.",
+  },
+  {
+    slug: "safe-browning-crimson-two-tone",
+    category: "safes",
+    brand: "Browning",
+    title: "Browning / Two-Tone — 33 Silver Series",
+    priceLine: "$4,499.00",
+    imageSrc: "/products/5.jpg",
+    description: "Crimson Two-Tone 33 Silver Series safe built to stand out in the showroom.",
+  },
+];
+
 export const ALL_CATALOG_PRODUCTS: CatalogProduct[] = [
   ...SECTIONALS,
   ...RECLINERS,
@@ -158,6 +160,7 @@ export const ALL_CATALOG_PRODUCTS: CatalogProduct[] = [
   ...MATTRESSES,
   ...APPLIANCES,
   ...GRILLS,
+  ...SAFES,
 ];
 
 export function getCatalogProductsByCategory(category: CatalogCategory): CatalogProduct[] {
@@ -175,5 +178,6 @@ export function categoryLabel(category: CatalogCategory): string {
   if (category === "mattresses") return "Mattresses";
   if (category === "appliances") return "Appliances";
   if (category === "grills") return "Grills";
+  if (category === "safes") return "Safes";
   return "Furniture";
 }

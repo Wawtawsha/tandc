@@ -4,7 +4,8 @@ export type CatalogCategory =
   | "sofas"
   | "mattresses"
   | "appliances"
-  | "grills";
+  | "grills"
+  | "safes";
 
 export type CatalogProduct = {
   slug: string;

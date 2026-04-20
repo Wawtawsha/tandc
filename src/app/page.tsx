@@ -17,6 +17,7 @@ const CATEGORY_IMAGES = {
   mattresses: "/products/3.jpg",
   appliances: "/products/4.jpg",
   grills: "/products/10.5.jpg",
+  safes: "/products/1.jpg",
 } as const;
 
 export default function Home() {
@@ -132,6 +133,13 @@ export default function Home() {
               title="Grills"
               href="/collections/grills"
               imageSrc={CATEGORY_IMAGES.grills}
+              imageSizes="(min-width: 768px) 34vw, 100vw"
+              className="min-h-[280px] md:min-h-[360px]"
+            />
+            <CategoryCard
+              title="Safes"
+              href="/collections/safes"
+              imageSrc={CATEGORY_IMAGES.safes}
               imageSizes="(min-width: 768px) 34vw, 100vw"
               className="min-h-[280px] md:min-h-[360px]"
             />
