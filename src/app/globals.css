@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Town & Country — three-tier contrast (cream / medium nav unchanged / deep anchor) */
+:root {
+  --cream: #faf7f2;
+  --card: #ffffff;
+  --anchor: #1c1209;
+  --crust: #0f0905;
+  --text: #2c1810;
+  --muted: #7a6555;
+  --border: rgba(44, 24, 16, 0.12);
+  --border-card: rgba(44, 24, 16, 0.1);
+  --border-input: rgba(44, 24, 16, 0.15);
+  --border-hover: rgba(44, 24, 16, 0.25);
+  --border-outline: rgba(44, 24, 16, 0.3);
+
+  --background: var(--cream);
+  --foreground: #faf7f2;
+  --ink: var(--text);
+  --cream-deep: var(--cream);
+
+  --brown: var(--text);
+  --brown-hover: #150d08;
+}
+
+@theme inline {
+  --color-cream: #faf7f2;
+  --color-card: #ffffff;
+  --color-anchor: #1c1209;
+  --color-crust: #0f0905;
+  --color-text: #2c1810;
+  --color-muted: #7a6555;
+  --color-background: #faf7f2;
+  --color-foreground: #faf7f2;
+  --color-ink: #2c1810;
+  --color-brand: #2c1810;
+  --color-brand-hover: #150d08;
+  --color-cozy-espresso: #593d3b;
+  --color-cozy-stone: #8a7968;
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
