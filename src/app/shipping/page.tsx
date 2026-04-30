@@ -27,17 +27,17 @@ export default function ShippingPolicyPage() {
           <p className="mt-4 text-sm text-muted">Last updated: {new Date().toLocaleDateString()}</p>
 
           <div className="prose prose-stone mt-8 max-w-none">
-            <h2>Local delivery only</h2>
+            <h2>Local delivery</h2>
             <p>
-              We currently offer <strong>local delivery only</strong>. We do
-              not ship orders nationwide.
+              <strong>Free local delivery</strong> in surrounding areas.
+              Delivery options are available outside surrounding areas.
             </p>
 
             <h2>Delivery area</h2>
             <p>
-              Delivery availability depends on your location. Please inquire
-              with your address and the item(s) you’re interested in to confirm
-              eligibility and scheduling.
+              Delivery availability and fees depend on your location. Please
+              inquire with your address and the item(s) you’re interested in
+              to confirm eligibility, pricing, and scheduling.
             </p>
 
             <h2>Delivery fees &amp; scheduling</h2>

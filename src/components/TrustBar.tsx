@@ -91,7 +91,7 @@ const ITEMS = [
   {
     icon: IconTruck,
     title: "Local Delivery",
-    text: "We deliver personally to your home",
+    text: "Free local delivery in surrounding areas. Delivery options available outside surrounding areas.",
   },
   {
     icon: IconHeart,
