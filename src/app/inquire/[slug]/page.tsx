@@ -88,17 +88,19 @@ export default async function ProductInquirePage({
   const brand = brandLine(product);
   const defaultMessage = `I'm interested in the ${product.title}${brand ? ` (${brand})` : ""}. Please contact me with more information.`;
 
+  const primaryCategory = product.categories[0];
+
   const backHref = returnPath
     ? returnPath
     : isFeaturedProduct(product)
       ? `/#${product.collectionSectionId}`
-      : `/collections/${product.category}`;
+      : `/collections/${primaryCategory}`;
 
   const backLabel = returnPath
     ? backLabelForReturnPath(returnPath)
     : isFeaturedProduct(product)
       ? "← Back to featured collections"
-      : `← Back to ${categoryLabel(product.category)}`;
+      : `← Back to ${categoryLabel(primaryCategory)}`;
 
   return (
     <>
@@ -146,12 +148,15 @@ export default async function ProductInquirePage({
                     {brand}
                   </p>
                 ) : null}
-                <Link
-                  href={`/collections/${product.category}`}
-                  className="rounded-full border border-[rgba(44,24,16,0.16)] bg-[rgba(44,24,16,0.04)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-text transition-colors duration-200 ease-in-out hover:bg-[rgba(44,24,16,0.07)]"
-                >
-                  {categoryLabel(product.category)}
-                </Link>
+                {product.categories.map((cat) => (
+                  <Link
+                    key={cat}
+                    href={`/collections/${cat}`}
+                    className="rounded-full border border-[rgba(44,24,16,0.16)] bg-[rgba(44,24,16,0.04)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-text transition-colors duration-200 ease-in-out hover:bg-[rgba(44,24,16,0.07)]"
+                  >
+                    {categoryLabel(cat)}
+                  </Link>
+                ))}
               </div>
               <h1 className="mt-2 font-serif text-3xl font-medium text-text md:text-4xl">
                 {product.title}

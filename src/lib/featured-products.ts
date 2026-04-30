@@ -4,7 +4,7 @@ import { FeaturedProduct } from "./types";
 export const LAZY_BOY_ITEMS: FeaturedProduct[] = [
   {
     slug: "sofa-lazboy-morrison",
-    category: "sofas",
+    categories: ["sofas", "recliners"],
     collectionSectionId: "lazyboy-heading",
     title: "La-Z-Boy Morrison — Power Reclining Sofa",
     priceLine: "$2,550.00",
@@ -15,7 +15,7 @@ export const LAZY_BOY_ITEMS: FeaturedProduct[] = [
   },
   {
     slug: "sofa-lazboy-trouper",
-    category: "sofas",
+    categories: ["sofas", "recliners"],
     collectionSectionId: "lazyboy-heading",
     title: "La-Z-Boy Trouper — Power Reclining Sofa",
     priceLine: "$2,525.00",
@@ -30,7 +30,7 @@ export const LAZY_BOY_ITEMS: FeaturedProduct[] = [
 export const ASHLEY_ITEMS: FeaturedProduct[] = [
   {
     slug: "sectional-ashley-5z-pittson",
-    category: "sectionals",
+    categories: ["sectionals"],
     collectionSectionId: "ashley-heading",
     title: "Ashley 5Z Pittson Sectional",
     priceLine: "$6,600.00",

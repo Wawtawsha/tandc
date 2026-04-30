@@ -15,7 +15,7 @@ export type CatalogProduct = {
   subPriceLine?: string;
   description: string;
   brand: string;
-  category: CatalogCategory;
+  categories: CatalogCategory[];
 };
 
 export type FeaturedProduct = {
@@ -24,7 +24,7 @@ export type FeaturedProduct = {
   title: string;
   priceLine: string;
   description: string;
-  category: CatalogCategory;
+  categories: CatalogCategory[];
   collectionSectionId: "lazyboy-heading" | "ashley-heading";
   cornerBrand?: string;
   badgeLeft?: string;

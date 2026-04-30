@@ -4,7 +4,7 @@ import { CatalogCategory, CatalogProduct } from "./types";
 const SECTIONALS: CatalogProduct[] = [
   {
     slug: "sectional-ashley-5z-pittson",
-    category: "sectionals",
+    categories: ["sectionals"],
     brand: "Ashley",
     title: "Ashley 5Z Pittson Sectional",
     priceLine: "$6,600.00",
@@ -12,8 +12,6 @@ const SECTIONALS: CatalogProduct[] = [
     description: "Transitional modular sectional with a padded track arm, upholstered in pigmented corrective top grain leather.",
   },
 ];
-
-const RECLINERS: CatalogProduct[] = [];
 
 // ── 6.jpg / 6.5.jpg (same image, loveseat listing + sofa sub-price) ───
 // ── 8.jpg ─────────────────────────────────────────────────────────────
@@ -24,7 +22,7 @@ const RECLINERS: CatalogProduct[] = [];
 const SOFAS: CatalogProduct[] = [
   {
     slug: "sofa-leesworth-power-loveseat",
-    category: "sofas",
+    categories: ["sofas", "recliners"],
     brand: "Leesworth",
     title: "Leesworth Power Leather Reclining Loveseat",
     priceLine: "$1,550.00",
@@ -33,7 +31,7 @@ const SOFAS: CatalogProduct[] = [
   },
   {
     slug: "sofa-lazboy-morrison",
-    category: "sofas",
+    categories: ["sofas", "recliners"],
     brand: "La-Z-Boy",
     title: "La-Z-Boy Morrison — Power Reclining Sofa",
     priceLine: "$2,550.00",
@@ -42,7 +40,7 @@ const SOFAS: CatalogProduct[] = [
   },
   {
     slug: "sofa-lazboy-trouper",
-    category: "sofas",
+    categories: ["sofas", "recliners"],
     brand: "La-Z-Boy",
     title: "La-Z-Boy Trouper — Power Reclining Sofa",
     priceLine: "$2,525.00",
@@ -52,7 +50,7 @@ const SOFAS: CatalogProduct[] = [
   },
   {
     slug: "sofa-franklin-laurel",
-    category: "sofas",
+    categories: ["sofas"],
     brand: "Franklin",
     title: "Franklin Laurel — Loveseat",
     priceLine: "$1,025.00",
@@ -62,7 +60,7 @@ const SOFAS: CatalogProduct[] = [
   },
   {
     slug: "sofa-franklin-laurel-chair-half",
-    category: "sofas",
+    categories: ["sofas"],
     brand: "Franklin",
     title: "Franklin Laurel — Chair and a Half",
     priceLine: "$775.00",
@@ -71,7 +69,7 @@ const SOFAS: CatalogProduct[] = [
   },
   {
     slug: "sofa-franklin-teagan-chair-half",
-    category: "sofas",
+    categories: ["sofas"],
     brand: "Franklin",
     title: "Franklin Teagan — Chair and a Half",
     priceLine: "$1,049.95",
@@ -85,7 +83,7 @@ const SOFAS: CatalogProduct[] = [
 const MATTRESSES: CatalogProduct[] = [
   {
     slug: "mattress-m311-memory-foam",
-    category: "mattresses",
+    categories: ["mattresses"],
     brand: "Mattress Tech",
     title: "M311 Series Memory Foam Firm",
     priceLine: "Queen: $999 | King: $1,099 | TXL: $669",
@@ -94,7 +92,7 @@ const MATTRESSES: CatalogProduct[] = [
   },
   {
     slug: "mattress-timeless-cloud-o-pedic",
-    category: "mattresses",
+    categories: ["mattresses"],
     brand: "Mattress Tech",
     title: "Timeless Cloud-O-Pedic II (Black Oasis)",
     priceLine: "Twin: $849.95 | Full: $999.95 | Queen: $1,049.95 | King: $1,449.95",
@@ -108,7 +106,7 @@ const MATTRESSES: CatalogProduct[] = [
 const APPLIANCES: CatalogProduct[] = [
   {
     slug: "appliance-speed-queen-dryer",
-    category: "appliances",
+    categories: ["appliances"],
     brand: "Speed Queen",
     title: "Speed Queen DC5 — 7.0 Cu. Ft. Electric Dryer",
     priceLine: "$1,549.00",
@@ -121,7 +119,7 @@ const APPLIANCES: CatalogProduct[] = [
 const GRILLS: CatalogProduct[] = [
   {
     slug: "grill-deck-boss-800",
-    category: "grills",
+    categories: ["grills"],
     brand: "Recteq Grills",
     title: "RT-800DB with Folding Shelf — Deck Boss 800",
     priceLine: "$1,198.00",
@@ -135,7 +133,7 @@ const GRILLS: CatalogProduct[] = [
 const SAFES: CatalogProduct[] = [
   {
     slug: "safe-browning-gloss-white",
-    category: "safes",
+    categories: ["safes"],
     brand: "Browning",
     title: "Browning / Gloss — 33 Silver Series",
     priceLine: "$4,199.00",
@@ -144,7 +142,7 @@ const SAFES: CatalogProduct[] = [
   },
   {
     slug: "safe-browning-crimson-two-tone",
-    category: "safes",
+    categories: ["safes"],
     brand: "Browning",
     title: "Browning / Two-Tone — 33 Silver Series",
     priceLine: "$4,499.00",
@@ -155,7 +153,6 @@ const SAFES: CatalogProduct[] = [
 
 export const ALL_CATALOG_PRODUCTS: CatalogProduct[] = [
   ...SECTIONALS,
-  ...RECLINERS,
   ...SOFAS,
   ...MATTRESSES,
   ...APPLIANCES,
@@ -164,7 +161,7 @@ export const ALL_CATALOG_PRODUCTS: CatalogProduct[] = [
 ];
 
 export function getCatalogProductsByCategory(category: CatalogCategory): CatalogProduct[] {
-  return ALL_CATALOG_PRODUCTS.filter((p) => p.category === category);
+  return ALL_CATALOG_PRODUCTS.filter((p) => p.categories.includes(category));
 }
 
 export function getCatalogProductBySlug(slug: string): CatalogProduct | undefined {
