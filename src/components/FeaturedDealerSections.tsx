@@ -8,7 +8,7 @@ import {
 import { FeaturedProduct } from "@/lib/types";
 
 function ProductCard(product: FeaturedProduct) {
-  const { slug, imageSrc, title, priceLine, cornerBrand, badgeLeft, badgeRight } =
+  const { slug, imageSrc, title, cornerBrand, badgeLeft, badgeRight } =
     product;
 
   return (
@@ -45,7 +45,7 @@ function ProductCard(product: FeaturedProduct) {
           <h3 className="font-serif text-lg font-semibold leading-snug text-text">
             {title}
           </h3>
-          <p className="mt-1.5 text-sm text-muted">{priceLine}</p>
+          <p className="mt-1.5 text-sm text-muted">See in store for pricing</p>
           <span className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-[#2C1810] px-4 py-3 text-center text-sm font-semibold text-cream transition-colors duration-200 ease-in-out hover:bg-[#150d08]">
             View details
           </span>

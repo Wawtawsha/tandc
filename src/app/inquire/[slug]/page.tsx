@@ -161,14 +161,9 @@ export default async function ProductInquirePage({
               <h1 className="mt-2 font-serif text-3xl font-medium text-text md:text-4xl">
                 {product.title}
               </h1>
-              <p className="mt-3 text-base font-medium text-text/90">
-                {product.priceLine}
+              <p className="mt-3 text-sm font-medium text-muted">
+                See in store for pricing
               </p>
-              {"subPriceLine" in product && product.subPriceLine ? (
-                <p className="mt-0.5 text-sm text-muted">
-                  {product.subPriceLine}
-                </p>
-              ) : null}
               <p className="mt-6 text-base leading-relaxed text-muted">
                 {product.description}
               </p>

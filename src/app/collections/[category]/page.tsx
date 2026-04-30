@@ -39,15 +39,11 @@ function ProductCard({
   imageSrc,
   title,
   brand,
-  priceLine,
-  subPriceLine,
 }: {
   href: string;
   imageSrc: string;
   title: string;
   brand: string;
-  priceLine: string;
-  subPriceLine?: string;
 }) {
   return (
     <Link
@@ -72,10 +68,7 @@ function ProductCard({
           <h3 className="font-serif text-lg font-semibold leading-snug text-text">
             {title}
           </h3>
-          <p className="mt-1.5 text-sm text-muted">{priceLine}</p>
-          {subPriceLine && (
-            <p className="mt-0.5 text-xs text-muted/80">{subPriceLine}</p>
-          )}
+          <p className="mt-1.5 text-sm text-muted">See in store for pricing</p>
           <span className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-[#2C1810] px-4 py-3 text-center text-sm font-semibold text-cream transition-colors duration-200 ease-in-out hover:bg-[#150d08]">
             View details
           </span>
@@ -121,8 +114,6 @@ export default async function CollectionCategoryPage({ params }: PageProps) {
                 imageSrc={p.imageSrc}
                 title={p.title}
                 brand={p.brand}
-                priceLine={p.priceLine}
-                subPriceLine={p.subPriceLine}
               />
             ))}
           </div>
