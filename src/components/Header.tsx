@@ -20,7 +20,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           <Link
             href="/"
-            className="font-serif text-2xl font-semibold tracking-tight text-foreground md:text-3xl lg:text-[2rem]"
+            className="whitespace-nowrap font-serif text-xl font-semibold tracking-tight text-foreground sm:text-2xl md:text-3xl lg:text-[2rem]"
           >
             Town &amp; Country
           </Link>

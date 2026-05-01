@@ -104,7 +104,7 @@ export function Footer() {
       <div className="border-t border-cream/10 bg-crust">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row md:px-8">
           <p className="text-center text-[10px] font-semibold uppercase tracking-[0.15em] text-cream/65 sm:text-left">
-            © {new Date().getFullYear()} Town &amp; Country Furniture.
+            {`© ${new Date().getFullYear()} Town & Country Furniture.`}
           </p>
           <div className="flex items-center gap-4 text-cream/70">
             <a
