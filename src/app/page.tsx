@@ -92,56 +92,56 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
             <CategoryCard
               title="Sectionals"
               href="/collections/sectionals"
               imageSrc={CATEGORY_IMAGES.sectionals}
-              imageSizes="(min-width: 768px) 34vw, 100vw"
-              className="min-h-[280px] md:min-h-[360px]"
+              imageSizes="(min-width: 768px) 34vw, 50vw"
+              className="min-h-[220px] md:min-h-[360px]"
               priority
             />
             <CategoryCard
               title="Recliners"
               href="/collections/recliners"
               imageSrc={CATEGORY_IMAGES.recliners}
-              imageSizes="(min-width: 768px) 34vw, 100vw"
-              className="min-h-[280px] md:min-h-[360px]"
+              imageSizes="(min-width: 768px) 34vw, 50vw"
+              className="min-h-[220px] md:min-h-[360px]"
             />
             <CategoryCard
               title="Sofas"
               href="/collections/sofas"
               imageSrc={CATEGORY_IMAGES.sofas}
-              imageSizes="(min-width: 768px) 34vw, 100vw"
-              className="min-h-[280px] md:min-h-[360px]"
+              imageSizes="(min-width: 768px) 34vw, 50vw"
+              className="min-h-[220px] md:min-h-[360px]"
             />
             <CategoryCard
               title="Mattresses"
               href="/collections/mattresses"
               imageSrc={CATEGORY_IMAGES.mattresses}
-              imageSizes="(min-width: 768px) 34vw, 100vw"
-              className="min-h-[280px] md:min-h-[360px]"
+              imageSizes="(min-width: 768px) 34vw, 50vw"
+              className="min-h-[220px] md:min-h-[360px]"
             />
             <CategoryCard
               title="Appliances"
               href="/collections/appliances"
               imageSrc={CATEGORY_IMAGES.appliances}
-              imageSizes="(min-width: 768px) 34vw, 100vw"
-              className="min-h-[280px] md:min-h-[360px]"
+              imageSizes="(min-width: 768px) 34vw, 50vw"
+              className="min-h-[220px] md:min-h-[360px]"
             />
             <CategoryCard
               title="Grills"
               href="/collections/grills"
               imageSrc={CATEGORY_IMAGES.grills}
-              imageSizes="(min-width: 768px) 34vw, 100vw"
-              className="min-h-[280px] md:min-h-[360px]"
+              imageSizes="(min-width: 768px) 34vw, 50vw"
+              className="min-h-[220px] md:min-h-[360px]"
             />
             <CategoryCard
               title="Safes"
               href="/collections/safes"
               imageSrc={CATEGORY_IMAGES.safes}
-              imageSizes="(min-width: 768px) 34vw, 100vw"
-              className="min-h-[280px] md:min-h-[360px]"
+              imageSizes="(min-width: 768px) 34vw, 50vw"
+              className="col-span-2 mx-auto w-[calc(50%-0.5rem)] min-h-[220px] md:col-span-1 md:col-start-2 md:mx-0 md:w-auto md:min-h-[360px]"
             />
           </div>
         </section>
